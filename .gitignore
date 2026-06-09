@@ -1,0 +1,8 @@
+.next/
+node_modules/
+out/
+*.tsbuildinfo
+.env*
+!/.env.example
+data/analysis-history.json
+data/analysis-history.json.tmp

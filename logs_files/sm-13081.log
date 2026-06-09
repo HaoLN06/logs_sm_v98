@@ -1,0 +1,772 @@
+   6312( 12312) 06/09/2026 16:11:19.763  RTE I SOAP client information scguiwweb 9.80.0016 () at 10.0.62.254 Browser Edge 148.0.0.0 AppServer Apache Tomcat 9.0.83 ESSToolbarButton Enabled(Client Enabled, Server Enabled)
+  6312( 13212) 06/09/2026 16:11:19.810  RTE I dbUpdate: Bản ghi đã được thay đổi bởi người dùng khác. Vui lòng "Làm mới"  thông tin và thực hiện lại thao tác.
+  6312( 13212) 06/09/2026 16:11:19.810  RTE I dbUpdate: file:(RuleSet) key:(id=ESD_MS_DGBG.display.view)
+  6312( 12312) 06/09/2026 16:11:19.810  RTE I User vtb.hd.41 has logged in and is using a Limited license ( 14 out of unlimited )
+  6312( 12312) 06/09/2026 16:11:19.810   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312( 12312) 06/09/2026 16:11:19.826   JS I Successfully created new JS context 0x1064AD350, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312( 12312) 06/09/2026 16:11:19.841   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312( 12312) 06/09/2026 16:11:20.014  RTE W No license for module ( Self Service Ticketing ), usage exceeded its limit. Licensed: 0, Active:13
+  6312( 12312) 06/09/2026 16:11:20.092   JS I IDOLAdvancedSettings context aware event handler: 9527
+  6312( 13212) 06/09/2026 16:11:20.469  RTE I dbUpdate: Bản ghi đã được thay đổi bởi người dùng khác. Vui lòng "Làm mới"  thông tin và thực hiện lại thao tác.
+  6312( 13212) 06/09/2026 16:11:20.469  RTE I dbUpdate: file:(RuleSet) key:(id=ESD_MS_DGBG.display.view)
+  6312( 13212) 06/09/2026 16:11:22.062  RTE I dbUpdate: Bản ghi đã được thay đổi bởi người dùng khác. Vui lòng "Làm mới"  thông tin và thực hiện lại thao tác.
+  6312( 13212) 06/09/2026 16:11:22.062  RTE I dbUpdate: file:(RuleSet) key:(id=ESD_MS_DGBG.display.view)
+  6312(  6740) 06/09/2026 16:11:22.439  RTE I Using "utpool" memory manager
+  6312(  6740) 06/09/2026 16:11:22.439  RTE I I18n initialized successfully for language "english"
+  6312(  6740) 06/09/2026 16:11:22.439  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312(  6740) 06/09/2026 16:11:22.439  RTE I Host network address: 10.0.62.10
+  6312(  6740) 06/09/2026 16:11:22.439  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312(  6740) 06/09/2026 16:11:22.471  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312(  6740) 06/09/2026 16:11:22.471  RTE I Set session schema: public
+  6312(  6740) 06/09/2026 16:11:22.471  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312(  6740) 06/09/2026 16:11:22.471  RTE I Thread DAOThread - csep.admin.01 initialization done. Thread 20 of 250.
+  6312(  6740) 06/09/2026 16:11:22.471  RTE I Total sessions since process began: 963
+  6312(  6740) 06/09/2026 16:11:22.493  RTE I User csep.admin.01 logged in.  Already licensed
+  6312(  6740) 06/09/2026 16:11:22.493  RTE I User csep.admin.01 has logged in and is using a Limited license ( 14 out of unlimited )
+  6312(  6740) 06/09/2026 16:11:22.493   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312(  6740) 06/09/2026 16:11:22.510   JS I Successfully created new JS context 0x722DFCA0, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312(  6740) 06/09/2026 16:11:22.510   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312(  6740) 06/09/2026 16:11:22.713   JS E Failed executing Function('dynamicFormGenerator') using context 0x722DFCA0 and Object 0X10C10E280 of class Function('mergeTableAccessible')
+  6312(  6740) 06/09/2026 16:11:22.713   JS E JSScript 'dynamicFormGenerator' line 1768: Error at column 9 -- TypeError: from is null
+  6312(  6740) 06/09/2026 16:11:22.713   JS E Exception Stack:
+                                              mergeTableAccessible@dynamicFormGenerator:1768:9
+  6312(  6740) 06/09/2026 16:11:22.713  RTE I Base login Response: 0.250 -- RAD: 0.000  JS: 0.157 Log:0.000 Database: 0.093(00446)  (CPU 0.171)  application:login,cleanup
+  6312(  2112) 06/09/2026 16:11:29.343   JS I IDOLAdvancedSettings context aware event handler: 9527
+  6312(  2112) 06/09/2026 16:11:29.422  RTE A Performance-7-$G.files, Globallist $G.files contains too many items! num=1060 ; application(display), panel(show.rio)
+  6312( 12312) 06/09/2026 16:11:49.105  RTE I Stop request received from client
+  6312( 12312) 06/09/2026 16:11:49.105 JRTE I Termination signal: 0
+  6312( 12312) 06/09/2026 16:11:49.105  RTE I sytermClean entered for signal 0
+  6312( 12312) 06/09/2026 16:11:49.105  RTE I Thread termination in progress
+  6312( 12312) 06/09/2026 16:11:49.120  RTE I User vtb.hd.41 has logged out and freed a Limited license ( 12 out of unlimited )
+  6312( 12312) 06/09/2026 16:11:49.120   JS I Calling JS_DestroyContext for 0x1064AD350
+  6312( 12312) 06/09/2026 16:11:50.141  RTE I Thread termination cleanup complete.  Thread was active for 0 days,00:00:31. Threads remaining: 19 of 250
+  6312( 12556) 06/09/2026 16:11:51.806   JS E SCFile.setOrderBy called with unknown field "indicator.id" in file "activityHDhandoverHHDV" - ignored
+  6312( 12556) 06/09/2026 16:11:51.806   JS E SCFile.setOrderBy called with unknown field "indicator.id" in file "activityHDhandoverHHDV" - ignored
+  6312( 12556) 06/09/2026 16:11:51.806   JS E SCFile.setOrderBy called with unknown field "indicator.id" in file "activityHDhandoverHHDV" - ignored
+  6312( 12556) 06/09/2026 16:11:58.344   JS E SCFile.setOrderBy called with unknown field "indicator.id" in file "activityHDhandover" - ignored
+  6312( 12556) 06/09/2026 16:11:58.359   JS E SCFile.setOrderBy called with unknown field "indicator.id" in file "activityHDhandover" - ignored
+  6312( 12556) 06/09/2026 16:11:58.359   JS E SCFile.setOrderBy called with unknown field "indicator.id" in file "activityHDhandover" - ignored
+  6312(  6740) 06/09/2026 16:12:16.604 JRTE I dao-thread exit due to timeout:csep.admin.01
+  6312(  6740) 06/09/2026 16:12:16.604 JRTE I DAOThread exits after idle for (sec): dao_sessiontimeout=15
+  6312(  6740) 06/09/2026 16:12:16.604 JRTE I Termination signal: 0
+  6312(  6740) 06/09/2026 16:12:16.604  RTE D Destroying DAOThread 0x1265C0990
+  6312(  6740) 06/09/2026 16:12:16.604  RTE I sytermClean entered for signal 0
+  6312(  6740) 06/09/2026 16:12:16.604  RTE I Thread termination in progress
+  6312(  6740) 06/09/2026 16:12:16.604  RTE I User csep.admin.01 has logged out and freed a Limited license ( 10 out of unlimited )
+  6312(  6740) 06/09/2026 16:12:16.604   JS I Calling JS_DestroyContext for 0x722DFCA0
+  6312(  6740) 06/09/2026 16:12:16.635  RTE I Thread termination cleanup complete.  Thread was active for 0 days,00:00:54. Threads remaining: 18 of 250
+  6312(   696) 06/09/2026 16:12:24.883  RTE E SQL Error: FATAL:  terminating connection due to idle-session timeout server closed the connection unexpectedly 	This probably means the server terminated abnormally 	before or while processing the request. 
+  6312(   696) 06/09/2026 16:12:24.883  RTE E FATAL:  terminating connection due to idle-session timeout server closed the connection unexpectedly 	This probably means the server terminated abnormally 	before or while processing the request. 
+  6312(   696) 06/09/2026 16:12:24.883  RTE E API=PQprepare() [in _prepare()], Statement=SELECT m1."NUMBER",m1."NEGDATESTAMP",m1."THENUMBER" FROM ACTIVITYMSTTBGM1 m1 WHERE ((m1."NUMBER"=$1)) ORDER BY m1."NUMBER" ASC,m1."NEGDATESTAMP" ASC,m1."THENUMBER" ASC OFFSET 0 ROWS FETCH NEXT 501 ROWS ONLY
+  6312(   696) 06/09/2026 16:12:25.338  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312(   696) 06/09/2026 16:12:25.338  RTE I Set session schema: public
+  6312(   696) 06/09/2026 16:12:25.338  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312( 11628) 06/09/2026 16:12:29.580  RTE I Using "utpool" memory manager
+  6312( 11628) 06/09/2026 16:12:29.580  RTE I I18n initialized successfully for language "english"
+  6312( 11628) 06/09/2026 16:12:29.580  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312( 11628) 06/09/2026 16:12:29.580  RTE I Host network address: 10.0.62.10
+  6312( 11628) 06/09/2026 16:12:29.580  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312( 11628) 06/09/2026 16:12:29.596  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312( 11628) 06/09/2026 16:12:29.596  RTE I Set session schema: public
+  6312( 11628) 06/09/2026 16:12:29.596  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312( 11628) 06/09/2026 16:12:29.596  RTE I Thread DAOThread - csep.admin.01 initialization done. Thread 19 of 250.
+  6312( 11628) 06/09/2026 16:12:29.596  RTE I Total sessions since process began: 964
+  6312( 11628) 06/09/2026 16:12:29.624  RTE I User csep.admin.01 logged in.  Already licensed
+  6312( 11628) 06/09/2026 16:12:29.624  RTE I User csep.admin.01 has logged in and is using a Limited license ( 11 out of unlimited )
+  6312( 11628) 06/09/2026 16:12:29.624   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312( 11628) 06/09/2026 16:12:29.639   JS I Successfully created new JS context 0x722DFCA0, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312( 11628) 06/09/2026 16:12:29.639   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312( 11628) 06/09/2026 16:12:29.844   JS E Failed executing Function('dynamicFormGenerator') using context 0x722DFCA0 and Object 0X10AF0E280 of class Function('mergeTableAccessible')
+  6312( 11628) 06/09/2026 16:12:29.844   JS E JSScript 'dynamicFormGenerator' line 1768: Error at column 9 -- TypeError: from is null
+  6312( 11628) 06/09/2026 16:12:29.844   JS E Exception Stack:
+                                              mergeTableAccessible@dynamicFormGenerator:1768:9
+  6312( 11628) 06/09/2026 16:12:29.844  RTE I Base login Response: 0.234 -- RAD: 0.060  JS: 0.158 Log:0.000 Database: 0.016(00444)  (CPU 0.249)  application:login,cleanup
+  6312(  6752) 06/09/2026 16:12:32.405  RTE I Idle session has been marked for termination
+  6312(  6752) 06/09/2026 16:12:32.405  RTE I trcheck: terminating with signal 0
+  6312(  6752) 06/09/2026 16:12:32.405  RTE I sytermSessionEx entered for signal 0 generated from src\tr.cpp line 113
+  6312(  6752) 06/09/2026 16:12:32.405  RTE I Thread Terminating
+  6312(  8236) 06/09/2026 16:12:32.405 JRTE W Send error response: 0
+  6312(  6752) 06/09/2026 16:12:32.405 JRTE I Termination signal: 0
+  6312(  6752) 06/09/2026 16:12:32.405  RTE I sytermClean entered for signal 0
+  6312(  6752) 06/09/2026 16:12:32.405  RTE I Thread termination in progress
+  6312(  6752) 06/09/2026 16:12:32.405  RTE E SQL Error: FATAL:  terminating connection due to idle-session timeout server closed the connection unexpectedly 	This probably means the server terminated abnormally 	before or while processing the request. 
+  6312(  6752) 06/09/2026 16:12:32.405  RTE E FATAL:  terminating connection due to idle-session timeout server closed the connection unexpectedly 	This probably means the server terminated abnormally 	before or while processing the request. 
+  6312(  6752) 06/09/2026 16:12:32.405  RTE E API=PQprepare() [in _prepare()], Statement=SELECT m1."RECORD_KEY" FROM SYSLOGM1 m1 WHERE ((m1."USER_SID"=$1)) ORDER BY m1."RECORD_KEY" ASC OFFSET 0 ROWS FETCH NEXT 501 ROWS ONLY
+  6312(  6752) 06/09/2026 16:12:32.436  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312(  6752) 06/09/2026 16:12:32.436  RTE I Set session schema: public
+  6312(  6752) 06/09/2026 16:12:32.436  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312(  6752) 06/09/2026 16:12:32.436  RTE I User vtb.hd.1 has logged out.  Still licensed ( 7 sessions remaining )
+  6312(  6752) 06/09/2026 16:12:32.436   JS I Calling JS_DestroyContext for 0x10A3180A0
+  6312(  6752) 06/09/2026 16:12:33.458  RTE I Thread termination cleanup complete.  Thread was active for 0 days,00:20:09. Threads remaining: 18 of 250
+  6312(  7296) 06/09/2026 16:12:40.330 JRTE I Creating new worker thread 8CD00CC3312C597146ADA4B7CCD5A949 t@59
+  6312(  1312) 06/09/2026 16:12:40.330  RTE I Using "utpool" memory manager
+  6312(  1312) 06/09/2026 16:12:40.330  RTE I I18n initialized successfully for language "english"
+  6312(  1312) 06/09/2026 16:12:40.330  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312(  1312) 06/09/2026 16:12:40.330  RTE I Host network address: 10.0.62.10
+  6312(  1312) 06/09/2026 16:12:40.330  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312(  1312) 06/09/2026 16:12:40.368  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312(  1312) 06/09/2026 16:12:40.368  RTE I Set session schema: public
+  6312(  1312) 06/09/2026 16:12:40.368  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312(  1312) 06/09/2026 16:12:40.368  RTE I Thread 8CD00CC3312C597146ADA4B7CCD5A949 initialization done. Thread 19 of 250.
+  6312(  1312) 06/09/2026 16:12:40.368  RTE I Total sessions since process began: 965
+  6312(  1312) 06/09/2026 16:12:40.368  RTE I current thread stack size: 8388608 bytes
+  6312(  1312) 06/09/2026 16:12:40.368  RTE I SOAP client information scguiwweb 9.80.0016 () at 10.0.62.254 Browser Chrome 148.0.0.0 AppServer Apache Tomcat 9.0.83 ESSToolbarButton Enabled(Client Enabled, Server Enabled)
+  6312(  1312) 06/09/2026 16:12:40.415  RTE I User vtb.hd.5 logged in.  Already licensed
+  6312(  1312) 06/09/2026 16:12:40.415  RTE I User vtb.hd.5 has logged in and is using a Limited license ( 11 out of unlimited )
+  6312(  1312) 06/09/2026 16:12:40.430   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312(  1312) 06/09/2026 16:12:40.446   JS I Successfully created new JS context 0x10A3180A0, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312(  1312) 06/09/2026 16:12:40.446   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312(  1312) 06/09/2026 16:12:40.713   JS I IDOLAdvancedSettings context aware event handler: 9527
+  6312( 11628) 06/09/2026 16:12:41.860  RTE I PostgreSQL: Length (1347 bytes) of data for field hhdv.name in esdMSkmsHHDV exceeds max (255 bytes), truncated
+  6312( 11628) 06/09/2026 16:12:41.860  RTE W Field( hhdv.name ) of File esdMSkmsHHDV was truncated 
+  6312(  9248) 06/09/2026 16:13:01.175  RTE E SQL Error: FATAL:  terminating connection due to idle-session timeout server closed the connection unexpectedly 	This probably means the server terminated abnormally 	before or while processing the request. 
+  6312(  9248) 06/09/2026 16:13:01.175  RTE E FATAL:  terminating connection due to idle-session timeout server closed the connection unexpectedly 	This probably means the server terminated abnormally 	before or while processing the request. 
+  6312(  9248) 06/09/2026 16:13:01.175  RTE E API=PQexecParams [in sqpgsqlSelect], Statement=SELECT * FROM WIZARDM1 WHERE "NAME"=$1
+  6312(  9248) 06/09/2026 16:13:01.175  RTE I sqpgsqlSelect - PQexecPrepared() failed
+  6312(  9248) 06/09/2026 16:13:01.249  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312(  9248) 06/09/2026 16:13:01.276  RTE I Set session schema: public
+  6312(  9248) 06/09/2026 16:13:01.276  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312( 11628) 06/09/2026 16:13:03.103  RTE E dbCount: cursor is not open for "esdHDhandover"
+  6312( 11628) 06/09/2026 16:13:03.103  RTE I [Address ] Symbol(Parm1,Parm2,Parm3,Parm4) +Offset                                          Source module
+  6312( 11628) 06/09/2026 16:13:03.103  RTE I  1: [0x180386ED9] os_print_stack(0x1054FD258,0x10CB08530,0x0,0x0) +0xB9                            E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-ntproc.cpp-2411
+  6312( 11628) 06/09/2026 16:13:03.103  RTE I  2: [0x1801BF993] dbCount(0x0,0x105E9E950,0x1054FD1F8,0x10A9E03C0) +0x113                          E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-dbi.cpp-1521
+  6312( 11628) 06/09/2026 16:13:03.103  RTE I  3: [0x1800C1618] datum_Count(0x10A9DF4E0,0x100000000,0x1054FD430,0x0) +0x2F8                      E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-CJsDatumClass.cpp-1353
+  6312( 11628) 06/09/2026 16:13:03.103  RTE I  4: [0x18033A5CF] jsnative_entry(0x8,0x1800C1320,0x722DFCA0,0x23D00000001) +0x2EF                  E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-jsUtil.cpp-47
+  6312( 11628) 06/09/2026 16:13:03.103  RTE I  5: [0x180096C22] datum_Count_call(0x109B561C0,0x1059AA2C0,0x1054FDF70,0x8) +0x22                  E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-CJsDatumClass.cpp-1255
+  6312( 11628) 06/09/2026 16:13:03.103  RTE I  6: [0x190E244B24D] <not found>(0x1059AA2C0,0x1054FDF70,0x8,0x1054FD518)
+  6312( 11628) 06/09/2026 16:13:03.103  RTE I  7: [0x109B561C0] <not found>(0x1054FDF70,0x8,0x1054FD518,0x1054FD408)
+  6312( 11628) 06/09/2026 16:13:03.103  RTE I  8: [0x1059AA2C0] <not found>(0x8,0x1054FD518,0x1054FD408,0x4022)
+  6312( 11628) 06/09/2026 16:13:03.103  RTE I  9: [0x1054FDF70] <not found>(0x1054FD518,0x1054FD408,0x4022,0x0)
+  6312( 11628) 06/09/2026 16:13:03.103  RTE I 10: [0x8] <not found>(0x1054FD408,0x4022,0x0,0x0)
+  6312( 11628) 06/09/2026 16:13:03.103  RTE I 11: [0x1054FD518] <not found>(0x4022,0x0,0x0,0x1CFDAAA690B)
+  6312( 11628) 06/09/2026 16:13:03.103  RTE I 12: [0x1054FD408] <not found>(0x0,0x0,0x1CFDAAA690B,0x3022)
+  6312( 11628) 06/09/2026 16:13:03.103  RTE I 13: [0x4022] <not found>(0x0,0x1CFDAAA690B,0x3022,0x1)
+  6312( 11628) 06/09/2026 16:13:03.103   JS W rest.main Query could not be parsed: (category="BGHHDV" and (created.by="VTB.HD.5" or created.by="VTB.HD.5" or contact.list~=NULL and contact.list like "*VTB.HD.5*"))
+Query field (contact.list) in (esdHDhandover) not defined in dbdict
+Query field (contact.list) in (esdHDhandover) not defined in dbdict
+  6312( 11628) 06/09/2026 16:13:03.119  RTE E dbCount: cursor is not open for "esdHDhandover"
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I [Address ] Symbol(Parm1,Parm2,Parm3,Parm4) +Offset                                          Source module
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I  1: [0x180386ED9] os_print_stack(0x1054FD258,0x10CB08DB0,0x0,0x0) +0xB9                            E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-ntproc.cpp-2411
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I  2: [0x1801BF993] dbCount(0x0,0x76768810,0x1054FD1F8,0x10A9E1560) +0x113                           E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-dbi.cpp-1521
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I  3: [0x1800C1618] datum_Count(0x10A9E1F40,0x100000000,0x1054FD430,0x0) +0x2F8                      E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-CJsDatumClass.cpp-1353
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I  4: [0x18033A5CF] jsnative_entry(0x8,0x1800C1320,0x722DFCA0,0x23D00000001) +0x2EF                  E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-jsUtil.cpp-47
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I  5: [0x180096C22] datum_Count_call(0x109B561C0,0x1059AA2C0,0x1054FDF70,0x8) +0x22                  E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-CJsDatumClass.cpp-1255
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I  6: [0x190E244B24D] <not found>(0x1059AA2C0,0x1054FDF70,0x8,0x1054FD518)
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I  7: [0x109B561C0] <not found>(0x1054FDF70,0x8,0x1054FD518,0x1054FD408)
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I  8: [0x1059AA2C0] <not found>(0x8,0x1054FD518,0x1054FD408,0x4022)
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I  9: [0x1054FDF70] <not found>(0x1054FD518,0x1054FD408,0x4022,0x0)
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I 10: [0x8] <not found>(0x1054FD408,0x4022,0x0,0x0)
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I 11: [0x1054FD518] <not found>(0x4022,0x0,0x0,0x1CFDAAA690B)
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I 12: [0x1054FD408] <not found>(0x0,0x0,0x1CFDAAA690B,0x3022)
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I 13: [0x4022] <not found>(0x0,0x1CFDAAA690B,0x3022,0x1)
+  6312( 11628) 06/09/2026 16:13:03.119   JS W rest.main Query could not be parsed: (category="BGHHDV" and (created.by="VTB.HD.5" or created.by="VTB.HD.5" or contact.list~=NULL and contact.list like "*VTB.HD.5*"))
+Query field (contact.list) in (esdHDhandover) not defined in dbdict
+Query field (contact.list) in (esdHDhandover) not defined in dbdict
+  6312( 11628) 06/09/2026 16:13:03.119  RTE E dbCount: cursor is not open for "esdHDhandover"
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I [Address ] Symbol(Parm1,Parm2,Parm3,Parm4) +Offset                                          Source module
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I  1: [0x180386ED9] os_print_stack(0x1054FD258,0x10CB0AD90,0x0,0x0) +0xB9                            E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-ntproc.cpp-2411
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I  2: [0x1801BF993] dbCount(0x0,0x10CF24930,0x1054FD1F8,0x10A9E2700) +0x113                          E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-dbi.cpp-1521
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I  3: [0x1800C1618] datum_Count(0x10A9E27E0,0x100000000,0x1054FD430,0x0) +0x2F8                      E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-CJsDatumClass.cpp-1353
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I  4: [0x18033A5CF] jsnative_entry(0x8,0x1800C1320,0x722DFCA0,0x23D00000001) +0x2EF                  E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-jsUtil.cpp-47
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I  5: [0x180096C22] datum_Count_call(0x109B561C0,0x1059AA2C0,0x1054FDF70,0x8) +0x22                  E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-CJsDatumClass.cpp-1255
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I  6: [0x190E244B24D] <not found>(0x1059AA2C0,0x1054FDF70,0x8,0x1054FD518)
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I  7: [0x109B561C0] <not found>(0x1054FDF70,0x8,0x1054FD518,0x1054FD408)
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I  8: [0x1059AA2C0] <not found>(0x8,0x1054FD518,0x1054FD408,0x4022)
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I  9: [0x1054FDF70] <not found>(0x1054FD518,0x1054FD408,0x4022,0x0)
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I 10: [0x8] <not found>(0x1054FD408,0x4022,0x0,0x0)
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I 11: [0x1054FD518] <not found>(0x4022,0x0,0x0,0x1CFDAAA690B)
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I 12: [0x1054FD408] <not found>(0x0,0x0,0x1CFDAAA690B,0x3022)
+  6312( 11628) 06/09/2026 16:13:03.119  RTE I 13: [0x4022] <not found>(0x0,0x1CFDAAA690B,0x3022,0x1)
+  6312( 11628) 06/09/2026 16:13:03.119   JS W rest.main Query could not be parsed: (category="BGHHDV" and (created.by="VTB.HD.5" or created.by="VTB.HD.5" or contact.list~=NULL and contact.list like "*VTB.HD.5*"))
+Query field (contact.list) in (esdHDhandover) not defined in dbdict
+Query field (contact.list) in (esdHDhandover) not defined in dbdict
+  6312(  9248) 06/09/2026 16:13:03.984  RTE A Performance-7-$G.org.unit.name.dept, Globallist $G.org.unit.name.dept contains too many items! num=2067 ; application(display), panel(show.rio)
+  6312(  9248) 06/09/2026 16:13:03.984  RTE A Performance-7-$G.org.unit.id.dept, Globallist $G.org.unit.id.dept contains too many items! num=2067 ; application(display), panel(show.rio)
+  6312(  7272) 06/09/2026 16:13:09.123 JRTE I Creating new worker thread CD77DDDE5E22F7F6E87E38A50AFC4F28 t@53
+  6312(  9580) 06/09/2026 16:13:09.123  RTE I Using "utpool" memory manager
+  6312(  9580) 06/09/2026 16:13:09.123  RTE I I18n initialized successfully for language "english"
+  6312(  9580) 06/09/2026 16:13:09.123  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312(  9580) 06/09/2026 16:13:09.123  RTE I Host network address: 10.0.62.10
+  6312(  9580) 06/09/2026 16:13:09.123  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312(  9580) 06/09/2026 16:13:09.139  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312(  9580) 06/09/2026 16:13:09.154  RTE I Set session schema: public
+  6312(  9580) 06/09/2026 16:13:09.154  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312(  9580) 06/09/2026 16:13:09.154  RTE I Thread CD77DDDE5E22F7F6E87E38A50AFC4F28 initialization done. Thread 20 of 250.
+  6312(  9580) 06/09/2026 16:13:09.154  RTE I Total sessions since process began: 966
+  6312(  9580) 06/09/2026 16:13:09.154  RTE I current thread stack size: 8388608 bytes
+  6312(  9580) 06/09/2026 16:13:09.154  RTE I SOAP client information scguiwweb 9.80.0016 () at 10.0.62.254 Browser Firefox 151.0 AppServer Apache Tomcat 9.0.83 ESSToolbarButton Enabled(Client Enabled, Server Enabled)
+  6312(  9580) 06/09/2026 16:13:09.191  RTE I User vtb.hd.1 logged in.  Already licensed
+  6312(  9580) 06/09/2026 16:13:09.191  RTE I User vtb.hd.1 has logged in and is using a Limited license ( 11 out of unlimited )
+  6312(  9580) 06/09/2026 16:13:09.202   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312(  9580) 06/09/2026 16:13:09.217   JS I Successfully created new JS context 0x1064AD350, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312(  9580) 06/09/2026 16:13:09.217   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312(  9580) 06/09/2026 16:13:09.453   JS I IDOLAdvancedSettings context aware event handler: 9527
+  6312(  1312) 06/09/2026 16:13:10.913  RTE I Stop request received from client
+  6312(  1312) 06/09/2026 16:13:10.917 JRTE I Termination signal: 0
+  6312(  1312) 06/09/2026 16:13:10.917  RTE I sytermClean entered for signal 0
+  6312(  1312) 06/09/2026 16:13:10.917  RTE I Thread termination in progress
+  6312(  1312) 06/09/2026 16:13:10.917  RTE I User vtb.hd.5 has logged out.  Still licensed ( 1 session remaining )
+  6312(  1312) 06/09/2026 16:13:10.932   JS I Calling JS_DestroyContext for 0x10A3180A0
+  6312(  1312) 06/09/2026 16:13:11.937  RTE I Thread termination cleanup complete.  Thread was active for 0 days,00:00:31. Threads remaining: 19 of 250
+  6312(  9580) 06/09/2026 16:13:23.860  RTE I Stop request received from client
+  6312(  9580) 06/09/2026 16:13:23.870 JRTE I Termination signal: 0
+  6312(  9580) 06/09/2026 16:13:23.870  RTE I sytermClean entered for signal 0
+  6312(  9580) 06/09/2026 16:13:23.870  RTE I Thread termination in progress
+  6312(  9580) 06/09/2026 16:13:23.870  RTE I User vtb.hd.1 has logged out.  Still licensed ( 5 sessions remaining )
+  6312(  9580) 06/09/2026 16:13:23.870   JS I Calling JS_DestroyContext for 0x1064AD350
+  6312(  9580) 06/09/2026 16:13:24.892  RTE I Thread termination cleanup complete.  Thread was active for 0 days,00:00:15. Threads remaining: 18 of 250
+  6312(  9748) 06/09/2026 16:13:35.435  RTE I Using "utpool" memory manager
+  6312(  9748) 06/09/2026 16:13:35.435  RTE I I18n initialized successfully for language "english"
+  6312(  9748) 06/09/2026 16:13:35.435  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312(  9748) 06/09/2026 16:13:35.435  RTE I Host network address: 10.0.62.10
+  6312(  9748) 06/09/2026 16:13:35.435  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312(  9748) 06/09/2026 16:13:35.465  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312(  9748) 06/09/2026 16:13:35.466  RTE I Set session schema: public
+  6312(  9748) 06/09/2026 16:13:35.466  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312(  9748) 06/09/2026 16:13:35.471  RTE I Thread DAOThread - csep.admin.01 initialization done. Thread 19 of 250.
+  6312(  9748) 06/09/2026 16:13:35.471  RTE I Total sessions since process began: 967
+  6312(  9748) 06/09/2026 16:13:35.487  RTE I User csep.admin.01 logged in.  Already licensed
+  6312(  9748) 06/09/2026 16:13:35.487  RTE I User csep.admin.01 has logged in and is using a Limited license ( 11 out of unlimited )
+  6312(  9748) 06/09/2026 16:13:35.487   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312(  9748) 06/09/2026 16:13:35.503   JS I Successfully created new JS context 0x1064AD350, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312(  9748) 06/09/2026 16:13:35.518   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312(  9748) 06/09/2026 16:13:35.722   JS E Failed executing Function('dynamicFormGenerator') using context 0x1064AD350 and Object 0X7F10E280 of class Function('mergeTableAccessible')
+  6312(  9748) 06/09/2026 16:13:35.722   JS E JSScript 'dynamicFormGenerator' line 1768: Error at column 9 -- TypeError: from is null
+  6312(  9748) 06/09/2026 16:13:35.722   JS E Exception Stack:
+                                              mergeTableAccessible@dynamicFormGenerator:1768:9
+  6312(  9748) 06/09/2026 16:13:35.722  RTE I Base login Response: 0.266 -- RAD: 0.001  JS: 0.188 Log:0.000 Database: 0.077(00445)  (CPU 0.250)  application:login,cleanup
+  6312(  9748) 06/09/2026 16:13:52.866  RTE E dbCount: cursor is not open for "esdHDhandover"
+  6312(  9748) 06/09/2026 16:13:52.866  RTE I [Address ] Symbol(Parm1,Parm2,Parm3,Parm4) +Offset                                          Source module
+  6312(  9748) 06/09/2026 16:13:52.866  RTE I  1: [0x180386ED9] os_print_stack(0x7D5FCB18,0x132D6CD10,0x0,0x0) +0xB9                             E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-ntproc.cpp-2411
+  6312(  9748) 06/09/2026 16:13:52.866  RTE I  2: [0x1801BF993] dbCount(0x0,0x13C6EA5C0,0x7D5FCAB8,0x123BC9E40) +0x113                           E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-dbi.cpp-1521
+  6312(  9748) 06/09/2026 16:13:52.866  RTE I  3: [0x1800C1618] datum_Count(0x123BCA880,0x100000000,0x7D5FCCF0,0x0) +0x2F8                       E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-CJsDatumClass.cpp-1353
+  6312(  9748) 06/09/2026 16:13:52.866  RTE I  4: [0x18033A5CF] jsnative_entry(0x8,0x1800C1320,0x1064AD350,0x17700000001) +0x2EF                 E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-jsUtil.cpp-47
+  6312(  9748) 06/09/2026 16:13:52.866  RTE I  5: [0x180096C22] datum_Count_call(0x0,0x7CBAA2C0,0x12C47E358,0x8) +0x22                           E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-CJsDatumClass.cpp-1255
+  6312(  9748) 06/09/2026 16:13:52.866  RTE I  6: [0x159B919BEB7] <not found>(0x7CBAA2C0,0x12C47E358,0x8,0x7D5FCDD8)
+  6312(  9748) 06/09/2026 16:13:52.866   JS W rest.main Query could not be parsed: (category="BGHHDV" and (created.by="VTB.HD.6" or created.by="VTB.HD.6" or contact.list~=NULL and contact.list like "*VTB.HD.6*"))
+Query field (contact.list) in (esdHDhandover) not defined in dbdict
+Query field (contact.list) in (esdHDhandover) not defined in dbdict
+  6312( 11628) 06/09/2026 16:13:52.882  RTE E dbCount: cursor is not open for "esdHDhandover"
+  6312( 11628) 06/09/2026 16:13:52.882  RTE I [Address ] Symbol(Parm1,Parm2,Parm3,Parm4) +Offset                                          Source module
+  6312( 11628) 06/09/2026 16:13:52.882  RTE I  1: [0x180386ED9] os_print_stack(0x1054FD258,0x13D41DE60,0x0,0x0) +0xB9                            E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-ntproc.cpp-2411
+  6312( 11628) 06/09/2026 16:13:52.882  RTE I  2: [0x1801BF993] dbCount(0x0,0x101826720,0x1054FD1F8,0x1141866E0) +0x113                          E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-dbi.cpp-1521
+  6312( 11628) 06/09/2026 16:13:52.882  RTE I  3: [0x1800C1618] datum_Count(0x114186F40,0x100000000,0x1054FD430,0x0) +0x2F8                      E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-CJsDatumClass.cpp-1353
+  6312( 11628) 06/09/2026 16:13:52.882  RTE I  4: [0x18033A5CF] jsnative_entry(0x8,0x1800C1320,0x722DFCA0,0x23D00000001) +0x2EF                  E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-jsUtil.cpp-47
+  6312( 11628) 06/09/2026 16:13:52.882  RTE I  5: [0x180096C22] datum_Count_call(0x109B561C0,0x1059AA2C0,0x1054FDF70,0x8) +0x22                  E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-CJsDatumClass.cpp-1255
+  6312( 11628) 06/09/2026 16:13:52.882  RTE I  6: [0x190E244B24D] <not found>(0x1059AA2C0,0x1054FDF70,0x8,0x1054FD518)
+  6312( 11628) 06/09/2026 16:13:52.882  RTE I  7: [0x109B561C0] <not found>(0x1054FDF70,0x8,0x1054FD518,0x1054FD408)
+  6312( 11628) 06/09/2026 16:13:52.882  RTE I  8: [0x1059AA2C0] <not found>(0x8,0x1054FD518,0x1054FD408,0x4022)
+  6312( 11628) 06/09/2026 16:13:52.882  RTE I  9: [0x1054FDF70] <not found>(0x1054FD518,0x1054FD408,0x4022,0x0)
+  6312( 11628) 06/09/2026 16:13:52.882  RTE I 10: [0x8] <not found>(0x1054FD408,0x4022,0x0,0x0)
+  6312( 11628) 06/09/2026 16:13:52.882  RTE I 11: [0x1054FD518] <not found>(0x4022,0x0,0x0,0x1CFDAAA690B)
+  6312( 11628) 06/09/2026 16:13:52.882  RTE I 12: [0x1054FD408] <not found>(0x0,0x0,0x1CFDAAA690B,0x3022)
+  6312( 11628) 06/09/2026 16:13:52.882  RTE I 13: [0x4022] <not found>(0x0,0x1CFDAAA690B,0x3022,0x1)
+  6312( 11628) 06/09/2026 16:13:52.882   JS W rest.main Query could not be parsed: (category="BGHHDV" and (created.by="VTB.HD.6" or created.by="VTB.HD.6" or contact.list~=NULL and contact.list like "*VTB.HD.6*"))
+Query field (contact.list) in (esdHDhandover) not defined in dbdict
+Query field (contact.list) in (esdHDhandover) not defined in dbdict
+  6312(  9748) 06/09/2026 16:13:52.882  RTE E dbCount: cursor is not open for "esdHDhandover"
+  6312(  9748) 06/09/2026 16:13:52.882  RTE I [Address ] Symbol(Parm1,Parm2,Parm3,Parm4) +Offset                                          Source module
+  6312(  9748) 06/09/2026 16:13:52.882  RTE I  1: [0x180386ED9] os_print_stack(0x7D5FC3B8,0x132D6C9E0,0x0,0x0) +0xB9                             E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-ntproc.cpp-2411
+  6312(  9748) 06/09/2026 16:13:52.882  RTE I  2: [0x1801BF993] dbCount(0x0,0x13C6ED740,0x7D5FC358,0x123BCBE20) +0x113                           E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-dbi.cpp-1521
+  6312(  9748) 06/09/2026 16:13:52.882  RTE I  3: [0x1800C1618] datum_Count(0x123BCBC60,0x100000000,0x7D5FC590,0x0) +0x2F8                       E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-CJsDatumClass.cpp-1353
+  6312(  9748) 06/09/2026 16:13:52.882  RTE I  4: [0x18033A5CF] jsnative_entry(0x8,0x1800C1320,0x1064AD350,0x17700000001) +0x2EF                 E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-jsUtil.cpp-47
+  6312(  9748) 06/09/2026 16:13:52.882  RTE I  5: [0x180096C22] datum_Count_call(0x0,0x7CBAA2C0,0x7D5FD028,0x8) +0x22                            E:\APPLICATION\OpenText\Service Manager 9.80\Server\RUN\SM.dll-CJsDatumClass.cpp-1255
+  6312(  9748) 06/09/2026 16:13:52.882  RTE I  6: [0x159B919BEB7] <not found>(0x7CBAA2C0,0x7D5FD028,0x8,0x7D5FC678)
+  6312(  9748) 06/09/2026 16:13:52.882   JS W rest.main Query could not be parsed: (category="BGHHDV" and (created.by="VTB.HD.6" or created.by="VTB.HD.6" or contact.list~=NULL and contact.list like "*VTB.HD.6*"))
+Query field (contact.list) in (esdHDhandover) not defined in dbdict
+Query field (contact.list) in (esdHDhandover) not defined in dbdict
+  6312( 11628) 06/09/2026 16:14:14.098 JRTE I dao-thread exit due to timeout:csep.admin.01
+  6312( 11628) 06/09/2026 16:14:14.098 JRTE I DAOThread exits after idle for (sec): dao_sessiontimeout=15
+  6312( 11628) 06/09/2026 16:14:14.098 JRTE I Termination signal: 0
+  6312( 11628) 06/09/2026 16:14:14.098  RTE D Destroying DAOThread 0x122235130
+  6312( 11628) 06/09/2026 16:14:14.098  RTE I sytermClean entered for signal 0
+  6312( 11628) 06/09/2026 16:14:14.098  RTE I Thread termination in progress
+  6312( 11628) 06/09/2026 16:14:14.098  RTE I User csep.admin.01 has logged out.  Still licensed ( 3 sessions remaining )
+  6312( 11628) 06/09/2026 16:14:14.098   JS I Calling JS_DestroyContext for 0x722DFCA0
+  6312( 11628) 06/09/2026 16:14:14.129  RTE I Thread termination cleanup complete.  Thread was active for 0 days,00:01:45. Threads remaining: 18 of 250
+  6312(  9748) 06/09/2026 16:14:17.937 JRTE I dao-thread exit due to timeout:csep.admin.01
+  6312(  9748) 06/09/2026 16:14:17.937 JRTE I DAOThread exits after idle for (sec): dao_sessiontimeout=15
+  6312(  9748) 06/09/2026 16:14:17.937 JRTE I Termination signal: 0
+  6312(  9748) 06/09/2026 16:14:17.937  RTE D Destroying DAOThread 0x125D366C0
+  6312(  9748) 06/09/2026 16:14:17.937  RTE I sytermClean entered for signal 0
+  6312(  9748) 06/09/2026 16:14:17.937  RTE I Thread termination in progress
+  6312(  9748) 06/09/2026 16:14:17.937  RTE I User csep.admin.01 has logged out.  Still licensed ( 2 sessions remaining )
+  6312(  9748) 06/09/2026 16:14:17.937   JS I Calling JS_DestroyContext for 0x1064AD350
+  6312(  9748) 06/09/2026 16:14:17.953  RTE I Thread termination cleanup complete.  Thread was active for 0 days,00:00:42. Threads remaining: 17 of 250
+  6312(  7048) 06/09/2026 16:14:32.489 JRTE I Creating new worker thread 66BEB8DCDC32D536B27632B77AB63A6E t@63
+  6312( 10932) 06/09/2026 16:14:32.489  RTE I Using "utpool" memory manager
+  6312( 10932) 06/09/2026 16:14:32.489  RTE I I18n initialized successfully for language "english"
+  6312( 10932) 06/09/2026 16:14:32.489  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312( 10932) 06/09/2026 16:14:32.489  RTE I Host network address: 10.0.62.10
+  6312( 10932) 06/09/2026 16:14:32.489  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312( 10932) 06/09/2026 16:14:32.520  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312( 10932) 06/09/2026 16:14:32.520  RTE I Set session schema: public
+  6312( 10932) 06/09/2026 16:14:32.520  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312( 10932) 06/09/2026 16:14:32.520  RTE I Thread 66BEB8DCDC32D536B27632B77AB63A6E initialization done. Thread 18 of 250.
+  6312( 10932) 06/09/2026 16:14:32.520  RTE I Total sessions since process began: 968
+  6312( 10932) 06/09/2026 16:14:32.520  RTE I current thread stack size: 8388608 bytes
+  6312( 10932) 06/09/2026 16:14:32.520  RTE I SOAP client information scguiwweb 9.80.0016 () at 10.0.62.254 Browser Edge 148.0.0.0 AppServer Apache Tomcat 9.0.83 ESSToolbarButton Enabled(Client Enabled, Server Enabled)
+  6312( 10932) 06/09/2026 16:14:32.583  RTE I User vtb.hd.1 logged in.  Already licensed
+  6312( 10932) 06/09/2026 16:14:32.583  RTE I User vtb.hd.1 has logged in and is using a Limited license ( 12 out of unlimited )
+  6312( 10932) 06/09/2026 16:14:32.583   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312( 10932) 06/09/2026 16:14:32.599   JS I Successfully created new JS context 0x1064AD350, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312( 10932) 06/09/2026 16:14:32.599   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312( 10932) 06/09/2026 16:14:32.819   JS I IDOLAdvancedSettings context aware event handler: 9527
+  6312( 11792) 06/09/2026 16:14:34.752  RTE I Using "utpool" memory manager
+  6312( 11792) 06/09/2026 16:14:34.752  RTE I I18n initialized successfully for language "english"
+  6312( 11792) 06/09/2026 16:14:34.752  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312( 11792) 06/09/2026 16:14:34.752  RTE I Host network address: 10.0.62.10
+  6312( 11792) 06/09/2026 16:14:34.752  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312( 11792) 06/09/2026 16:14:34.800  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312( 11792) 06/09/2026 16:14:34.800  RTE I Set session schema: public
+  6312( 11792) 06/09/2026 16:14:34.800  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312( 11792) 06/09/2026 16:14:34.800  RTE I Thread DAOThread - csep.admin.01 initialization done. Thread 19 of 250.
+  6312( 11792) 06/09/2026 16:14:34.800  RTE I Total sessions since process began: 969
+  6312( 11792) 06/09/2026 16:14:34.822  RTE I User csep.admin.01 logged in.  Already licensed
+  6312( 11792) 06/09/2026 16:14:34.822  RTE I User csep.admin.01 has logged in and is using a Limited license ( 12 out of unlimited )
+  6312( 11792) 06/09/2026 16:14:34.822   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312( 11792) 06/09/2026 16:14:34.837   JS I Successfully created new JS context 0x722DFCA0, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312( 11792) 06/09/2026 16:14:34.837   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312( 11792) 06/09/2026 16:14:35.041   JS E Failed executing Function('dynamicFormGenerator') using context 0x722DFCA0 and Object 0X10510E280 of class Function('mergeTableAccessible')
+  6312( 11792) 06/09/2026 16:14:35.041   JS E JSScript 'dynamicFormGenerator' line 1768: Error at column 9 -- TypeError: from is null
+  6312( 11792) 06/09/2026 16:14:35.041   JS E Exception Stack:
+                                              mergeTableAccessible@dynamicFormGenerator:1768:9
+  6312( 11792) 06/09/2026 16:14:35.041  RTE I Base login Response: 0.234 -- RAD: 0.000  JS: 0.188 Log:0.000 Database: 0.046(00444)  (CPU 0.249)  application:login,cleanup
+  6312(  2540) 06/09/2026 16:15:02.658  RTE E SQL Error: FATAL:  terminating connection due to idle-session timeout server closed the connection unexpectedly 	This probably means the server terminated abnormally 	before or while processing the request. 
+  6312(  2540) 06/09/2026 16:15:02.658  RTE E API=PQexecParams [in sqpgsqlSelect], Statement=SELECT * FROM WIZARDM1 WHERE "NAME"=$1
+  6312(  2540) 06/09/2026 16:15:02.658  RTE I sqpgsqlSelect - PQexecPrepared() failed
+  6312(  2540) 06/09/2026 16:15:02.689  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312(  2540) 06/09/2026 16:15:02.689  RTE I Set session schema: public
+  6312(  2540) 06/09/2026 16:15:02.689  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312( 11792) 06/09/2026 16:15:13.852 JRTE I dao-thread exit due to timeout:csep.admin.01
+  6312( 11792) 06/09/2026 16:15:13.852 JRTE I DAOThread exits after idle for (sec): dao_sessiontimeout=15
+  6312( 11792) 06/09/2026 16:15:13.852 JRTE I Termination signal: 0
+  6312( 11792) 06/09/2026 16:15:13.852  RTE D Destroying DAOThread 0x12887FAB0
+  6312( 11792) 06/09/2026 16:15:13.852  RTE I sytermClean entered for signal 0
+  6312( 11792) 06/09/2026 16:15:13.852  RTE I Thread termination in progress
+  6312( 11792) 06/09/2026 16:15:13.853  RTE I User csep.admin.01 has logged out and freed a Limited license ( 11 out of unlimited )
+  6312( 11792) 06/09/2026 16:15:13.853   JS I Calling JS_DestroyContext for 0x722DFCA0
+  6312( 11792) 06/09/2026 16:15:13.869  RTE I Thread termination cleanup complete.  Thread was active for 0 days,00:00:39. Threads remaining: 18 of 250
+  6312(  7296) 06/09/2026 16:15:29.169 JRTE I Creating new worker thread 4FC3009BF85292D20C31E22049002483 t@59
+  6312( 12204) 06/09/2026 16:15:29.169  RTE I Using "utpool" memory manager
+  6312( 12204) 06/09/2026 16:15:29.169  RTE I I18n initialized successfully for language "english"
+  6312( 12204) 06/09/2026 16:15:29.169  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312( 12204) 06/09/2026 16:15:29.169  RTE I Host network address: 10.0.62.10
+  6312( 12204) 06/09/2026 16:15:29.169  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312( 12204) 06/09/2026 16:15:29.185  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312( 12204) 06/09/2026 16:15:29.185  RTE I Set session schema: public
+  6312( 12204) 06/09/2026 16:15:29.185  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312( 12204) 06/09/2026 16:15:29.185  RTE I Thread 4FC3009BF85292D20C31E22049002483 initialization done. Thread 19 of 250.
+  6312( 12204) 06/09/2026 16:15:29.185  RTE I Total sessions since process began: 970
+  6312( 12204) 06/09/2026 16:15:29.185  RTE I current thread stack size: 8388608 bytes
+  6312( 12204) 06/09/2026 16:15:29.201  RTE I SOAP client information scguiwweb 9.80.0016 () at 10.0.62.254 Browser Chrome 148.0.0.0 AppServer Apache Tomcat 9.0.83 ESSToolbarButton Enabled(Client Enabled, Server Enabled)
+  6312( 12204) 06/09/2026 16:15:29.248   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312( 12204) 06/09/2026 16:15:29.264   JS I Successfully created new JS context 0x722DFCA0, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312( 12204) 06/09/2026 16:15:29.280   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312( 12204) 06/09/2026 16:15:29.311  RTE I Stop request received from client
+  6312( 12204) 06/09/2026 16:15:29.421 JRTE I Termination signal: 0
+  6312( 12204) 06/09/2026 16:15:29.421  RTE I sytermClean entered for signal 0
+  6312( 12204) 06/09/2026 16:15:29.421  RTE I Thread termination in progress
+  6312( 12204) 06/09/2026 16:15:29.421   JS I Calling JS_DestroyContext for 0x722DFCA0
+  6312( 12204) 06/09/2026 16:15:30.430  RTE I Thread termination cleanup complete.  Thread was active for 0 days,00:00:01. Threads remaining: 18 of 250
+  6312(  1868) 06/09/2026 16:16:03.894 JRTE I Creating new worker thread 619F580C5230E09BD1E3186285C142FF t@58
+  6312(  2576) 06/09/2026 16:16:03.894  RTE I Using "utpool" memory manager
+  6312(  2576) 06/09/2026 16:16:03.894  RTE I I18n initialized successfully for language "english"
+  6312(  2576) 06/09/2026 16:16:03.894  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312(  2576) 06/09/2026 16:16:03.894  RTE I Host network address: 10.0.62.10
+  6312(  2576) 06/09/2026 16:16:03.894  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312(  2576) 06/09/2026 16:16:03.925  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312(  2576) 06/09/2026 16:16:03.925  RTE I Set session schema: public
+  6312(  2576) 06/09/2026 16:16:03.925  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312(  2576) 06/09/2026 16:16:03.925  RTE I Thread 619F580C5230E09BD1E3186285C142FF initialization done. Thread 19 of 250.
+  6312(  2576) 06/09/2026 16:16:03.925  RTE I Total sessions since process began: 971
+  6312(  2576) 06/09/2026 16:16:03.925  RTE I current thread stack size: 8388608 bytes
+  6312(  2576) 06/09/2026 16:16:03.925  RTE I SOAP client information scguiwweb 9.80.0016 () at 10.0.62.254 Browser Chrome 148.0.0.0 AppServer Apache Tomcat 9.0.83 ESSToolbarButton Enabled(Client Enabled, Server Enabled)
+  6312(  2576) 06/09/2026 16:16:03.973   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312(  2576) 06/09/2026 16:16:03.988   JS I Successfully created new JS context 0x722DFCA0, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312(  2576) 06/09/2026 16:16:03.988   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312(  2576) 06/09/2026 16:16:04.020  RTE I Stop request received from client
+  6312(  2576) 06/09/2026 16:16:04.035 JRTE I Termination signal: 0
+  6312(  2576) 06/09/2026 16:16:04.035  RTE I sytermClean entered for signal 0
+  6312(  2576) 06/09/2026 16:16:04.035  RTE I Thread termination in progress
+  6312(  2576) 06/09/2026 16:16:04.035   JS I Calling JS_DestroyContext for 0x722DFCA0
+  6312(  2576) 06/09/2026 16:16:05.056  RTE I Thread termination cleanup complete.  Thread was active for 0 days,00:00:02. Threads remaining: 18 of 250
+  6312( 10708) 06/09/2026 16:16:27.437  RTE I Using "utpool" memory manager
+  6312( 10708) 06/09/2026 16:16:27.437  RTE I I18n initialized successfully for language "english"
+  6312( 10708) 06/09/2026 16:16:27.437  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312( 10708) 06/09/2026 16:16:27.437  RTE I Host network address: 10.0.62.10
+  6312( 10708) 06/09/2026 16:16:27.437  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312( 10708) 06/09/2026 16:16:27.469  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312( 10708) 06/09/2026 16:16:27.469  RTE I Set session schema: public
+  6312( 10708) 06/09/2026 16:16:27.469  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312( 10708) 06/09/2026 16:16:27.469  RTE I Thread DAOThread - csep.admin.01 initialization done. Thread 19 of 250.
+  6312( 10708) 06/09/2026 16:16:27.469  RTE I Total sessions since process began: 972
+  6312( 10708) 06/09/2026 16:16:27.491  RTE I User csep.admin.01 logged in.  Already licensed
+  6312( 10708) 06/09/2026 16:16:27.491  RTE I User csep.admin.01 has logged in and is using a Limited license ( 12 out of unlimited )
+  6312( 10708) 06/09/2026 16:16:27.491   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312( 10708) 06/09/2026 16:16:27.507   JS I Successfully created new JS context 0x10FC304D0, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312( 10708) 06/09/2026 16:16:27.507   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312( 10708) 06/09/2026 16:16:27.696   JS E Failed executing Function('dynamicFormGenerator') using context 0x10FC304D0 and Object 0X7D60E280 of class Function('mergeTableAccessible')
+  6312( 10708) 06/09/2026 16:16:27.696   JS E JSScript 'dynamicFormGenerator' line 1768: Error at column 9 -- TypeError: from is null
+  6312( 10708) 06/09/2026 16:16:27.696   JS E Exception Stack:
+                                              mergeTableAccessible@dynamicFormGenerator:1768:9
+  6312( 10708) 06/09/2026 16:16:27.696  RTE I Base login Response: 0.218 -- RAD: 0.016  JS: 0.156 Log:0.000 Database: 0.046(00444)  (CPU 0.233)  application:login,cleanup
+  6312( 10576) 06/09/2026 16:16:32.312 JRTE I Creating new worker thread A466753EE363F375E8CF08B06DF4E32D t@54
+  6312( 11580) 06/09/2026 16:16:32.312  RTE I Using "utpool" memory manager
+  6312( 11580) 06/09/2026 16:16:32.312  RTE I I18n initialized successfully for language "english"
+  6312( 11580) 06/09/2026 16:16:32.312  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312( 11580) 06/09/2026 16:16:32.312  RTE I Host network address: 10.0.62.10
+  6312( 11580) 06/09/2026 16:16:32.312  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312( 11580) 06/09/2026 16:16:32.343  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312( 11580) 06/09/2026 16:16:32.343  RTE I Set session schema: public
+  6312( 11580) 06/09/2026 16:16:32.343  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312( 11580) 06/09/2026 16:16:32.343  RTE I Thread A466753EE363F375E8CF08B06DF4E32D initialization done. Thread 20 of 250.
+  6312( 11580) 06/09/2026 16:16:32.343  RTE I Total sessions since process began: 973
+  6312( 11580) 06/09/2026 16:16:32.343  RTE I current thread stack size: 8388608 bytes
+  6312( 11580) 06/09/2026 16:16:32.343  RTE I SOAP client information scguiwweb 9.80.0016 () at 10.0.62.254 Browser Chrome 148.0.0.0 AppServer Apache Tomcat 9.0.83 ESSToolbarButton Enabled(Client Enabled, Server Enabled)
+  6312( 11580) 06/09/2026 16:16:32.390  RTE I User vtb.hd.13 has logged in and is using a Limited license ( 13 out of unlimited )
+  6312( 11580) 06/09/2026 16:16:32.390   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312( 11580) 06/09/2026 16:16:32.406   JS I Successfully created new JS context 0x722DFCA0, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312( 11580) 06/09/2026 16:16:32.406   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312( 11580) 06/09/2026 16:16:32.564  RTE W No license for module ( Self Service Ticketing ), usage exceeded its limit. Licensed: 0, Active:12
+  6312( 11580) 06/09/2026 16:16:32.627   JS I IDOLAdvancedSettings context aware event handler: 9527
+  6312(   452) 06/09/2026 16:16:41.864  RTE E SQL Error: FATAL:  terminating connection due to idle-session timeout server closed the connection unexpectedly 	This probably means the server terminated abnormally 	before or while processing the request. 
+  6312(   452) 06/09/2026 16:16:41.864  RTE E FATAL:  terminating connection due to idle-session timeout server closed the connection unexpectedly 	This probably means the server terminated abnormally 	before or while processing the request. 
+  6312(   452) 06/09/2026 16:16:41.864  RTE E API=PQexecParams [in sqpgsqlSelect], Statement=SELECT * FROM ESDMSKMSHHDVM1 WHERE "ID"=$1
+  6312(   452) 06/09/2026 16:16:41.864  RTE I sqpgsqlSelect - PQexecPrepared() failed
+  6312(   452) 06/09/2026 16:16:41.895  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312(   452) 06/09/2026 16:16:41.895  RTE I Set session schema: public
+  6312(   452) 06/09/2026 16:16:41.895  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312(   452) 06/09/2026 16:16:41.927   JS E SCFile.setFields called with unknown field "product.category" in file "esdMSdxmsItemAssignment" - ignored, js code: getOneRecord@'ESD_Utils':450:9
+  6312( 10708) 06/09/2026 16:16:44.931   JS E SCFile.setFields called with unknown field "lot.no" in file "esdHDserialdevice" - ignored, js code: queryWithFields@'RestfulQuery':417:13
+  6312( 10708) 06/09/2026 16:17:00.151 JRTE I dao-thread exit due to timeout:csep.admin.01
+  6312( 10708) 06/09/2026 16:17:00.151 JRTE I DAOThread exits after idle for (sec): dao_sessiontimeout=15
+  6312( 10708) 06/09/2026 16:17:00.151 JRTE I Termination signal: 0
+  6312( 10708) 06/09/2026 16:17:00.151  RTE D Destroying DAOThread 0x141498BB0
+  6312( 10708) 06/09/2026 16:17:00.151  RTE I sytermClean entered for signal 0
+  6312( 10708) 06/09/2026 16:17:00.151  RTE I Thread termination in progress
+  6312( 10708) 06/09/2026 16:17:00.154  RTE I User csep.admin.01 has logged out.  Still licensed ( 2 sessions remaining )
+  6312( 10708) 06/09/2026 16:17:00.154   JS I Calling JS_DestroyContext for 0x10FC304D0
+  6312( 10708) 06/09/2026 16:17:00.167  RTE I Thread termination cleanup complete.  Thread was active for 0 days,00:00:33. Threads remaining: 19 of 250
+  6312(  1868) 06/09/2026 16:17:05.121 JRTE I Creating new worker thread 77111DB8936D19332F5BBD5014068960 t@58
+  6312(  5424) 06/09/2026 16:17:05.121  RTE I Using "utpool" memory manager
+  6312(  5424) 06/09/2026 16:17:05.121  RTE I I18n initialized successfully for language "english"
+  6312(  5424) 06/09/2026 16:17:05.121  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312(  5424) 06/09/2026 16:17:05.121  RTE I Host network address: 10.0.62.10
+  6312(  5424) 06/09/2026 16:17:05.121  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312(  5424) 06/09/2026 16:17:05.168  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312(  5424) 06/09/2026 16:17:05.168  RTE I Set session schema: public
+  6312(  5424) 06/09/2026 16:17:05.168  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312(  5424) 06/09/2026 16:17:05.168  RTE I Thread 77111DB8936D19332F5BBD5014068960 initialization done. Thread 20 of 250.
+  6312(  5424) 06/09/2026 16:17:05.168  RTE I Total sessions since process began: 974
+  6312(  5424) 06/09/2026 16:17:05.168  RTE I current thread stack size: 8388608 bytes
+  6312(  5424) 06/09/2026 16:17:05.168  RTE I SOAP client information scguiwweb 9.80.0016 () at 10.0.62.254 Browser Chrome 148.0.0.0 AppServer Apache Tomcat 9.0.83 ESSToolbarButton Enabled(Client Enabled, Server Enabled)
+  6312(  5424) 06/09/2026 16:17:05.200   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312(  5424) 06/09/2026 16:17:05.215   JS I Successfully created new JS context 0x10FC304D0, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312(  5424) 06/09/2026 16:17:05.215   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312(  5424) 06/09/2026 16:17:05.231  RTE I Stop request received from client
+  6312(  5424) 06/09/2026 16:17:05.231 JRTE I Termination signal: 0
+  6312(  5424) 06/09/2026 16:17:05.231  RTE I sytermClean entered for signal 0
+  6312(  5424) 06/09/2026 16:17:05.231  RTE I Thread termination in progress
+  6312(  5424) 06/09/2026 16:17:05.247   JS I Calling JS_DestroyContext for 0x10FC304D0
+  6312(  5424) 06/09/2026 16:17:06.268  RTE I Thread termination cleanup complete.  Thread was active for 0 days,00:00:01. Threads remaining: 19 of 250
+  6312( 13052) 06/09/2026 16:17:33.190  RTE E SQL Error: FATAL:  terminating connection due to idle-session timeout server closed the connection unexpectedly 	This probably means the server terminated abnormally 	before or while processing the request. 
+  6312( 13052) 06/09/2026 16:17:33.190  RTE E API=PQexecParams [in sqpgsqlSelect], Statement=SELECT * FROM WIZARDM1 WHERE "NAME"=$1
+  6312( 13052) 06/09/2026 16:17:33.190  RTE I sqpgsqlSelect - PQexecPrepared() failed
+  6312( 13052) 06/09/2026 16:17:33.222  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312( 13052) 06/09/2026 16:17:33.222  RTE I Set session schema: public
+  6312( 13052) 06/09/2026 16:17:33.222  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312(  7328) 06/09/2026 16:17:37.089  RTE I Using "utpool" memory manager
+  6312(  7328) 06/09/2026 16:17:37.089  RTE I I18n initialized successfully for language "english"
+  6312(  7328) 06/09/2026 16:17:37.089  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312(  7328) 06/09/2026 16:17:37.089  RTE I Host network address: 10.0.62.10
+  6312(  7328) 06/09/2026 16:17:37.089  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312(  7328) 06/09/2026 16:17:37.120  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312(  7328) 06/09/2026 16:17:37.120  RTE I Set session schema: public
+  6312(  7328) 06/09/2026 16:17:37.120  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312(  7328) 06/09/2026 16:17:37.125  RTE I Thread DAOThread - csep.admin.01 initialization done. Thread 20 of 250.
+  6312(  7328) 06/09/2026 16:17:37.125  RTE I Total sessions since process began: 975
+  6312(  7328) 06/09/2026 16:17:37.126  RTE I User csep.admin.01 logged in.  Already licensed
+  6312(  7328) 06/09/2026 16:17:37.126  RTE I User csep.admin.01 has logged in and is using a Limited license ( 13 out of unlimited )
+  6312(  7328) 06/09/2026 16:17:37.141   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312(  7328) 06/09/2026 16:17:37.157   JS I Successfully created new JS context 0x10A3180A0, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312(  7328) 06/09/2026 16:17:37.157   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312(  7328) 06/09/2026 16:17:37.362   JS E Failed executing Function('dynamicFormGenerator') using context 0x10A3180A0 and Object 0X10510E280 of class Function('mergeTableAccessible')
+  6312(  7328) 06/09/2026 16:17:37.362   JS E JSScript 'dynamicFormGenerator' line 1768: Error at column 9 -- TypeError: from is null
+  6312(  7328) 06/09/2026 16:17:37.362   JS E Exception Stack:
+                                              mergeTableAccessible@dynamicFormGenerator:1768:9
+  6312(  7328) 06/09/2026 16:17:37.362  RTE I Base login Response: 0.249 -- RAD: 0.000  JS: 0.125 Log:0.000 Database: 0.124(00446)  (CPU 0.156)  application:login,cleanup
+  6312( 12540) 06/09/2026 16:17:49.390  RTE E SQL Error: FATAL:  terminating connection due to idle-session timeout server closed the connection unexpectedly 	This probably means the server terminated abnormally 	before or while processing the request. 
+  6312( 12540) 06/09/2026 16:17:49.390  RTE E FATAL:  terminating connection due to idle-session timeout server closed the connection unexpectedly 	This probably means the server terminated abnormally 	before or while processing the request. 
+  6312( 12540) 06/09/2026 16:17:49.390  RTE E API=PQexecParams [in sqpgsqlSelect], Statement=SELECT * FROM JSBEANFACTORYM1 WHERE "NAME"=$1
+  6312( 12540) 06/09/2026 16:17:49.390  RTE I sqpgsqlSelect - PQexecPrepared() failed
+  6312( 12540) 06/09/2026 16:17:49.421  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312( 12540) 06/09/2026 16:17:49.421  RTE I Set session schema: public
+  6312( 12540) 06/09/2026 16:17:49.421  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312( 12540) 06/09/2026 16:17:49.437   JS E SCFile.setOrderBy called with unknown field "indicator.id" in file "activityHDacceptance" - ignored
+  6312( 12540) 06/09/2026 16:17:49.453   JS E SCFile.setOrderBy called with unknown field "indicator.id" in file "activityHDacceptance" - ignored
+  6312( 12540) 06/09/2026 16:17:49.453   JS E SCFile.setOrderBy called with unknown field "indicator.id" in file "activityHDacceptance" - ignored
+  6312(   452) 06/09/2026 16:17:49.830   JS E SCFile.setFields called with unknown field "product.category" in file "esdMSdxmsItemAssignment" - ignored, js code: getOneRecord@'ESD_Utils':450:9
+  6312(  7328) 06/09/2026 16:17:57.275 JRTE I dao-thread exit due to timeout:csep.admin.01
+  6312(  7328) 06/09/2026 16:17:57.275 JRTE I DAOThread exits after idle for (sec): dao_sessiontimeout=15
+  6312(  7328) 06/09/2026 16:17:57.275 JRTE I Termination signal: 0
+  6312(  7328) 06/09/2026 16:17:57.275  RTE D Destroying DAOThread 0x1421D1AF0
+  6312(  7328) 06/09/2026 16:17:57.275  RTE I sytermClean entered for signal 0
+  6312(  7328) 06/09/2026 16:17:57.275  RTE I Thread termination in progress
+  6312(  7328) 06/09/2026 16:17:57.275  RTE I User csep.admin.01 has logged out.  Still licensed ( 3 sessions remaining )
+  6312(  7328) 06/09/2026 16:17:57.275   JS I Calling JS_DestroyContext for 0x10A3180A0
+  6312(  7328) 06/09/2026 16:17:57.291  RTE I Thread termination cleanup complete.  Thread was active for 0 days,00:00:20. Threads remaining: 19 of 250
+  6312(  2520) 06/09/2026 16:18:03.754 JRTE I Creating new worker thread 10A8D6B1C02166D702C1DB2BA9415D30 t@56
+  6312( 12656) 06/09/2026 16:18:03.754  RTE I Using "utpool" memory manager
+  6312( 12656) 06/09/2026 16:18:03.754  RTE I I18n initialized successfully for language "english"
+  6312( 12656) 06/09/2026 16:18:03.754  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312( 12656) 06/09/2026 16:18:03.754  RTE I Host network address: 10.0.62.10
+  6312( 12656) 06/09/2026 16:18:03.754  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312( 12656) 06/09/2026 16:18:03.770  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312( 12656) 06/09/2026 16:18:03.770  RTE I Set session schema: public
+  6312( 12656) 06/09/2026 16:18:03.770  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312( 12656) 06/09/2026 16:18:03.770  RTE I Thread 10A8D6B1C02166D702C1DB2BA9415D30 initialization done. Thread 20 of 250.
+  6312( 12656) 06/09/2026 16:18:03.770  RTE I Total sessions since process began: 976
+  6312( 12656) 06/09/2026 16:18:03.770  RTE I current thread stack size: 8388608 bytes
+  6312( 12656) 06/09/2026 16:18:03.770  RTE I SOAP client information scguiwweb 9.80.0016 () at 10.0.62.254 Browser Chrome 148.0.0.0 AppServer Apache Tomcat 9.0.83 ESSToolbarButton Enabled(Client Enabled, Server Enabled)
+  6312( 12656) 06/09/2026 16:18:03.832  RTE I User vtb.hd.1 logged in.  Already licensed
+  6312( 12656) 06/09/2026 16:18:03.832  RTE I User vtb.hd.1 has logged in and is using a Limited license ( 13 out of unlimited )
+  6312( 12656) 06/09/2026 16:18:03.832   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312( 12656) 06/09/2026 16:18:03.848   JS I Successfully created new JS context 0x10A3180A0, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312( 12656) 06/09/2026 16:18:03.864   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312( 12656) 06/09/2026 16:18:04.069   JS I IDOLAdvancedSettings context aware event handler: 9527
+  6312(  7684) 06/09/2026 16:18:19.540  RTE I Using "utpool" memory manager
+  6312(  7684) 06/09/2026 16:18:19.540  RTE I I18n initialized successfully for language "english"
+  6312(  7684) 06/09/2026 16:18:19.540  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312(  7684) 06/09/2026 16:18:19.540  RTE I Host network address: 10.0.62.10
+  6312(  7684) 06/09/2026 16:18:19.540  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312(  7684) 06/09/2026 16:18:19.555  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312(  7684) 06/09/2026 16:18:19.555  RTE I Set session schema: public
+  6312(  7684) 06/09/2026 16:18:19.555  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312(  7684) 06/09/2026 16:18:19.555  RTE I Thread DAOThread - csep.admin.01 initialization done. Thread 21 of 250.
+  6312(  7684) 06/09/2026 16:18:19.555  RTE I Total sessions since process began: 977
+  6312(  7684) 06/09/2026 16:18:19.586  RTE I User csep.admin.01 logged in.  Already licensed
+  6312(  7684) 06/09/2026 16:18:19.586  RTE I User csep.admin.01 has logged in and is using a Limited license ( 13 out of unlimited )
+  6312(  7684) 06/09/2026 16:18:19.586   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312(  7684) 06/09/2026 16:18:19.602   JS I Successfully created new JS context 0x78D77E20, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312(  7684) 06/09/2026 16:18:19.602   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312(  7684) 06/09/2026 16:18:19.806   JS E Failed executing Function('dynamicFormGenerator') using context 0x78D77E20 and Object 0X10320E280 of class Function('mergeTableAccessible')
+  6312(  7684) 06/09/2026 16:18:19.806   JS E JSScript 'dynamicFormGenerator' line 1768: Error at column 9 -- TypeError: from is null
+  6312(  7684) 06/09/2026 16:18:19.806   JS E Exception Stack:
+                                              mergeTableAccessible@dynamicFormGenerator:1768:9
+  6312(  7684) 06/09/2026 16:18:19.806  RTE I Base login Response: 0.235 -- RAD: 0.014  JS: 0.157 Log:0.000 Database: 0.064(00445)  (CPU 0.218)  application:login,cleanup
+  6312(  7684) 06/09/2026 16:18:40.076 JRTE I dao-thread exit due to timeout:csep.admin.01
+  6312(  7684) 06/09/2026 16:18:40.076 JRTE I DAOThread exits after idle for (sec): dao_sessiontimeout=15
+  6312(  7684) 06/09/2026 16:18:40.076 JRTE I Termination signal: 0
+  6312(  7684) 06/09/2026 16:18:40.076  RTE D Destroying DAOThread 0x11D9B3220
+  6312(  7684) 06/09/2026 16:18:40.076  RTE I sytermClean entered for signal 0
+  6312(  7684) 06/09/2026 16:18:40.076  RTE I Thread termination in progress
+  6312(  7684) 06/09/2026 16:18:40.076  RTE I User csep.admin.01 has logged out.  Still licensed ( 3 sessions remaining )
+  6312(  7684) 06/09/2026 16:18:40.076   JS I Calling JS_DestroyContext for 0x78D77E20
+  6312(  7684) 06/09/2026 16:18:40.092  RTE I Thread termination cleanup complete.  Thread was active for 0 days,00:00:21. Threads remaining: 20 of 250
+  6312(   696) 06/09/2026 16:18:44.766  RTE E SQL Error: FATAL:  terminating connection due to idle-session timeout server closed the connection unexpectedly 	This probably means the server terminated abnormally 	before or while processing the request. 
+  6312(   696) 06/09/2026 16:18:44.766  RTE E FATAL:  terminating connection due to idle-session timeout server closed the connection unexpectedly 	This probably means the server terminated abnormally 	before or while processing the request. 
+  6312(   696) 06/09/2026 16:18:44.766  RTE E API=PQprepare() [in _prepare()], Statement=SELECT m1."SYSLANGUAGE",m1."NAME" FROM FORMATM1 m1 WHERE ((m1."SYSLANGUAGE"=$1 and m1."NAME" IN ($2,$3))) ORDER BY m1."SYSLANGUAGE" ASC,m1."NAME" ASC OFFSET 0 ROWS FETCH NEXT 501 ROWS ONLY
+  6312(   696) 06/09/2026 16:18:44.797  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312(   696) 06/09/2026 16:18:44.797  RTE I Set session schema: public
+  6312(   696) 06/09/2026 16:18:44.797  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312( 13248) 06/09/2026 16:18:46.023  RTE I Using "utpool" memory manager
+  6312( 13248) 06/09/2026 16:18:46.023  RTE I I18n initialized successfully for language "english"
+  6312( 13248) 06/09/2026 16:18:46.023  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312( 13248) 06/09/2026 16:18:46.023  RTE I Host network address: 10.0.62.10
+  6312( 13248) 06/09/2026 16:18:46.023  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312( 13248) 06/09/2026 16:18:46.070  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312( 13248) 06/09/2026 16:18:46.070  RTE I Set session schema: public
+  6312( 13248) 06/09/2026 16:18:46.070  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312( 13248) 06/09/2026 16:18:46.070  RTE I Thread DAOThread - csep.admin.01 initialization done. Thread 21 of 250.
+  6312( 13248) 06/09/2026 16:18:46.070  RTE I Total sessions since process began: 978
+  6312( 13248) 06/09/2026 16:18:46.092  RTE I User csep.admin.01 logged in.  Already licensed
+  6312( 13248) 06/09/2026 16:18:46.092  RTE I User csep.admin.01 has logged in and is using a Limited license ( 13 out of unlimited )
+  6312( 13248) 06/09/2026 16:18:46.092   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312( 13248) 06/09/2026 16:18:46.107   JS I Successfully created new JS context 0x78D77E20, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312( 13248) 06/09/2026 16:18:46.107   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312( 13248) 06/09/2026 16:18:46.296   JS E Failed executing Function('dynamicFormGenerator') using context 0x78D77E20 and Object 0X10320E280 of class Function('mergeTableAccessible')
+  6312( 13248) 06/09/2026 16:18:46.296   JS E JSScript 'dynamicFormGenerator' line 1768: Error at column 9 -- TypeError: from is null
+  6312( 13248) 06/09/2026 16:18:46.296   JS E Exception Stack:
+                                              mergeTableAccessible@dynamicFormGenerator:1768:9
+  6312( 13248) 06/09/2026 16:18:46.296  RTE I Base login Response: 0.219 -- RAD: 0.000  JS: 0.141 Log:0.000 Database: 0.078(00444)  (CPU 0.202)  application:login,cleanup
+  6312(  4336) 06/09/2026 16:18:52.757  RTE I Idle session has been marked for termination
+  6312(  4336) 06/09/2026 16:18:52.757  RTE I trcheck: terminating with signal 0
+  6312(  4336) 06/09/2026 16:18:52.757  RTE I sytermSessionEx entered for signal 0 generated from src\tr.cpp line 113
+  6312(  4336) 06/09/2026 16:18:52.757  RTE I Thread Terminating
+  6312(  7272) 06/09/2026 16:18:52.757 JRTE W Send error response: 0
+  6312(  4336) 06/09/2026 16:18:52.757 JRTE I Termination signal: 0
+  6312(  4336) 06/09/2026 16:18:52.757  RTE I sytermClean entered for signal 0
+  6312(  4336) 06/09/2026 16:18:52.757  RTE I Thread termination in progress
+  6312(  4336) 06/09/2026 16:18:52.761  RTE E SQL Error: FATAL:  terminating connection due to idle-session timeout server closed the connection unexpectedly 	This probably means the server terminated abnormally 	before or while processing the request. 
+  6312(  4336) 06/09/2026 16:18:52.761  RTE E FATAL:  terminating connection due to idle-session timeout server closed the connection unexpectedly 	This probably means the server terminated abnormally 	before or while processing the request. 
+  6312(  4336) 06/09/2026 16:18:52.761  RTE E API=PQprepare() [in _prepare()], Statement=SELECT m1."RECORD_KEY" FROM SYSLOGM1 m1 WHERE ((m1."USER_SID"=$1)) ORDER BY m1."RECORD_KEY" ASC OFFSET 0 ROWS FETCH NEXT 501 ROWS ONLY
+  6312(  4336) 06/09/2026 16:18:52.800  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312(  4336) 06/09/2026 16:18:52.800  RTE I Set session schema: public
+  6312(  4336) 06/09/2026 16:18:52.800  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312(  4336) 06/09/2026 16:18:52.800  RTE I User vtb.hd.1 has logged out.  Still licensed ( 5 sessions remaining )
+  6312(  4336) 06/09/2026 16:18:52.800   JS I Calling JS_DestroyContext for 0x107D5E010
+  6312(  4336) 06/09/2026 16:18:53.821  RTE I Thread termination cleanup complete.  Thread was active for 0 days,01:51:20. Threads remaining: 20 of 250
+  6312( 13248) 06/09/2026 16:19:00.816   JS E SetProperty() called on Object 0X10327AAF0 of class SCFile('esdMSkmsHHDV') with an ID of String 'currency.rate' failed, the property value is 'Value '211''
+  6312( 13248) 06/09/2026 16:19:00.816   JS E JSScript 'ESD_Utils' line 60: Error at column 13 -- Error: Cannot store a string into an object of type number
+  6312( 13248) 06/09/2026 16:19:00.816   JS E Exception Stack:
+                                              CreateTicket@ESD_Utils:60:13
+                                              phanTachHHDV@ESD_ApiCustomScript_THMS_Functions:3581:23
+                                              run@ESD_ApiCustomScript_THMS:116:26
+                                              @ESD_ApiCustomScript_THMS:1:1
+                                              run@RAD:28:11
+                                              actionEngine@RestfulAction:230:19
+                                              processAction@RestfulAction:131:13
+                                              __processResource@RestfulMain:89:16
+                                              processResource@RestfulMain:24:15
+  6312( 13248) 06/09/2026 16:19:19.508 JRTE I dao-thread exit due to timeout:csep.admin.01
+  6312( 13248) 06/09/2026 16:19:19.508 JRTE I DAOThread exits after idle for (sec): dao_sessiontimeout=15
+  6312( 13248) 06/09/2026 16:19:19.508 JRTE I Termination signal: 0
+  6312( 13248) 06/09/2026 16:19:19.508  RTE D Destroying DAOThread 0x12811DFE0
+  6312( 13248) 06/09/2026 16:19:19.508  RTE I sytermClean entered for signal 0
+  6312( 13248) 06/09/2026 16:19:19.508  RTE I Thread termination in progress
+  6312( 13248) 06/09/2026 16:19:19.508  RTE I User csep.admin.01 has logged out.  Still licensed ( 1 session remaining )
+  6312( 13248) 06/09/2026 16:19:19.508   JS I Calling JS_DestroyContext for 0x78D77E20
+  6312( 13248) 06/09/2026 16:19:19.523  RTE I Thread termination cleanup complete.  Thread was active for 0 days,00:00:33. Threads remaining: 19 of 250
+  6312(  1260) 06/09/2026 16:20:24.800 JRTE I JavaMemory Max(2147483648) Used(134966072) %Used(6.2848473)
+  6312(  5904) 06/09/2026 16:20:28.308  RTE I Using "utpool" memory manager
+  6312(  5904) 06/09/2026 16:20:28.308  RTE I I18n initialized successfully for language "english"
+  6312(  5904) 06/09/2026 16:20:28.308  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312(  5904) 06/09/2026 16:20:28.308  RTE I Host network address: 10.0.62.10
+  6312(  5904) 06/09/2026 16:20:28.308  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312(  5904) 06/09/2026 16:20:28.339  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312(  5904) 06/09/2026 16:20:28.339  RTE I Set session schema: public
+  6312(  5904) 06/09/2026 16:20:28.339  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312(  5904) 06/09/2026 16:20:28.339  RTE I Thread DAOThread - csep.admin.01 initialization done. Thread 20 of 250.
+  6312(  5904) 06/09/2026 16:20:28.339  RTE I Total sessions since process began: 979
+  6312(  5904) 06/09/2026 16:20:28.361  RTE I User csep.admin.01 logged in.  Already licensed
+  6312(  5904) 06/09/2026 16:20:28.361  RTE I User csep.admin.01 has logged in and is using a Limited license ( 13 out of unlimited )
+  6312(  5904) 06/09/2026 16:20:28.361   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312(  5904) 06/09/2026 16:20:28.377   JS I Successfully created new JS context 0x107D5E010, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312(  5904) 06/09/2026 16:20:28.393   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312(  5904) 06/09/2026 16:20:28.597   JS E Failed executing Function('dynamicFormGenerator') using context 0x107D5E010 and Object 0X10500E280 of class Function('mergeTableAccessible')
+  6312(  5904) 06/09/2026 16:20:28.597   JS E JSScript 'dynamicFormGenerator' line 1768: Error at column 9 -- TypeError: from is null
+  6312(  5904) 06/09/2026 16:20:28.597   JS E Exception Stack:
+                                              mergeTableAccessible@dynamicFormGenerator:1768:9
+  6312(  5904) 06/09/2026 16:20:28.597  RTE I Base login Response: 0.265 -- RAD: 0.000  JS: 0.218 Log:0.000 Database: 0.047(00446)  (CPU 0.233)  application:login,cleanup
+  6312( 11616) 06/09/2026 16:20:37.571  RTE I Using "utpool" memory manager
+  6312( 11616) 06/09/2026 16:20:37.571  RTE I I18n initialized successfully for language "english"
+  6312( 11616) 06/09/2026 16:20:37.571  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312( 11616) 06/09/2026 16:20:37.571  RTE I Host network address: 10.0.62.10
+  6312( 11616) 06/09/2026 16:20:37.571  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312( 11616) 06/09/2026 16:20:37.592  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312( 11616) 06/09/2026 16:20:37.593  RTE I Set session schema: public
+  6312( 11616) 06/09/2026 16:20:37.593  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312( 11616) 06/09/2026 16:20:37.597  RTE I Thread DAOThread - csep.admin.01 initialization done. Thread 21 of 250.
+  6312( 11616) 06/09/2026 16:20:37.597  RTE I Total sessions since process began: 980
+  6312( 11616) 06/09/2026 16:20:37.613  RTE I User csep.admin.01 logged in.  Already licensed
+  6312( 11616) 06/09/2026 16:20:37.613  RTE I User csep.admin.01 has logged in and is using a Limited license ( 13 out of unlimited )
+  6312( 11616) 06/09/2026 16:20:37.613   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312( 11616) 06/09/2026 16:20:37.629   JS I Successfully created new JS context 0x11EE62BF0, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312( 11616) 06/09/2026 16:20:37.644   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312( 11616) 06/09/2026 16:20:37.851   JS E Failed executing Function('dynamicFormGenerator') using context 0x11EE62BF0 and Object 0X10530E280 of class Function('mergeTableAccessible')
+  6312( 11616) 06/09/2026 16:20:37.851   JS E JSScript 'dynamicFormGenerator' line 1768: Error at column 9 -- TypeError: from is null
+  6312( 11616) 06/09/2026 16:20:37.851   JS E Exception Stack:
+                                              mergeTableAccessible@dynamicFormGenerator:1768:9
+  6312( 11616) 06/09/2026 16:20:37.864  RTE I Base login Response: 0.282 -- RAD: 0.000  JS: 0.157 Log:0.000 Database: 0.125(00447)  (CPU 0.202)  application:login,cleanup
+  6312(  3588) 06/09/2026 16:20:43.488 JRTE I Creating new worker thread A5A5E2ABE01911AAF36C67B615F46F24 t@66
+  6312( 10692) 06/09/2026 16:20:43.488  RTE I Using "utpool" memory manager
+  6312( 10692) 06/09/2026 16:20:43.488  RTE I I18n initialized successfully for language "english"
+  6312( 10692) 06/09/2026 16:20:43.488  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312( 10692) 06/09/2026 16:20:43.488  RTE I Host network address: 10.0.62.10
+  6312( 10692) 06/09/2026 16:20:43.488  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312( 10692) 06/09/2026 16:20:43.519  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312( 10692) 06/09/2026 16:20:43.519  RTE I Set session schema: public
+  6312( 10692) 06/09/2026 16:20:43.519  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312( 10692) 06/09/2026 16:20:43.519  RTE I Thread A5A5E2ABE01911AAF36C67B615F46F24 initialization done. Thread 22 of 250.
+  6312( 10692) 06/09/2026 16:20:43.519  RTE I Total sessions since process began: 981
+  6312( 10692) 06/09/2026 16:20:43.519  RTE I current thread stack size: 8388608 bytes
+  6312( 10692) 06/09/2026 16:20:43.519  RTE I SOAP client information scguiwweb 9.80.0016 () at 10.0.62.254 Browser Chrome 148.0.0.0 AppServer Apache Tomcat 9.0.83 ESSToolbarButton Enabled(Client Enabled, Server Enabled)
+  6312( 10692) 06/09/2026 16:20:43.566  RTE I User vtb.hd.1 logged in.  Already licensed
+  6312( 10692) 06/09/2026 16:20:43.566  RTE I User vtb.hd.1 has logged in and is using a Limited license ( 13 out of unlimited )
+  6312( 10692) 06/09/2026 16:20:43.582   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312( 10692) 06/09/2026 16:20:43.598   JS I Successfully created new JS context 0x70664010, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312( 10692) 06/09/2026 16:20:43.598   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312( 10692) 06/09/2026 16:20:43.865   JS I IDOLAdvancedSettings context aware event handler: 9527
+  6312(   452) 06/09/2026 16:20:57.628   JS E SCFile.setFields called with unknown field "product.category" in file "esdMSdxmsItemAssignment" - ignored, js code: getOneRecord@'ESD_Utils':450:9
+  6312( 11616) 06/09/2026 16:21:00.535 JRTE I dao-thread exit due to timeout:csep.admin.01
+  6312( 11616) 06/09/2026 16:21:00.535 JRTE I DAOThread exits after idle for (sec): dao_sessiontimeout=15
+  6312( 11616) 06/09/2026 16:21:00.535 JRTE I Termination signal: 0
+  6312( 11616) 06/09/2026 16:21:00.535  RTE D Destroying DAOThread 0x1278F4510
+  6312( 11616) 06/09/2026 16:21:00.535  RTE I sytermClean entered for signal 0
+  6312( 11616) 06/09/2026 16:21:00.535  RTE I Thread termination in progress
+  6312( 11616) 06/09/2026 16:21:00.537  RTE I User csep.admin.01 has logged out.  Still licensed ( 4 sessions remaining )
+  6312( 11616) 06/09/2026 16:21:00.537   JS I Calling JS_DestroyContext for 0x11EE62BF0
+  6312( 11616) 06/09/2026 16:21:00.551  RTE I Thread termination cleanup complete.  Thread was active for 0 days,00:00:23. Threads remaining: 21 of 250
+  6312(  5904) 06/09/2026 16:21:05.419 JRTE I dao-thread exit due to timeout:csep.admin.01
+  6312(  5904) 06/09/2026 16:21:05.419 JRTE I DAOThread exits after idle for (sec): dao_sessiontimeout=15
+  6312(  5904) 06/09/2026 16:21:05.419 JRTE I Termination signal: 0
+  6312(  5904) 06/09/2026 16:21:05.419  RTE D Destroying DAOThread 0x78C8EFF0
+  6312(  5904) 06/09/2026 16:21:05.419  RTE I sytermClean entered for signal 0
+  6312(  5904) 06/09/2026 16:21:05.419  RTE I Thread termination in progress
+  6312(  5904) 06/09/2026 16:21:05.419  RTE I User csep.admin.01 has logged out.  Still licensed ( 3 sessions remaining )
+  6312(  5904) 06/09/2026 16:21:05.419   JS I Calling JS_DestroyContext for 0x107D5E010
+  6312(  5904) 06/09/2026 16:21:05.450  RTE I Thread termination cleanup complete.  Thread was active for 0 days,00:00:37. Threads remaining: 20 of 250
+  6312( 12556) 06/09/2026 16:21:17.473   JS E SetProperty() called on Object 0X1210977C0 of class SCFile('esdHDcontractHHDV') with an ID of String 'name' failed, the property value is 'Value 'Hệ thống điều hành, quản lý giám sát vận chuyển hàng hóa, ấn chỉ Thẻ'', the JS source info: CreateTicket@'ESD_Utils':60:13
+  6312( 12556) 06/09/2026 16:21:17.473   JS E SetProperty() called on Object 0X121097910 of class SCFile('esdHDcontractHHDV') with an ID of String 'name' failed, the property value is 'Value 'Thang máy tải khách'', the JS source info: CreateTicket@'ESD_Utils':60:13
+  6312(  5212) 06/09/2026 16:21:19.058  RTE I Using "utpool" memory manager
+  6312(  5212) 06/09/2026 16:21:19.058  RTE I I18n initialized successfully for language "english"
+  6312(  5212) 06/09/2026 16:21:19.058  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312(  5212) 06/09/2026 16:21:19.058  RTE I Host network address: 10.0.62.10
+  6312(  5212) 06/09/2026 16:21:19.058  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312(  5212) 06/09/2026 16:21:19.090  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312(  5212) 06/09/2026 16:21:19.090  RTE I Set session schema: public
+  6312(  5212) 06/09/2026 16:21:19.090  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312(  5212) 06/09/2026 16:21:19.090  RTE I Thread DAOThread - csep.admin.01 initialization done. Thread 21 of 250.
+  6312(  5212) 06/09/2026 16:21:19.090  RTE I Total sessions since process began: 982
+  6312(  5212) 06/09/2026 16:21:19.113  RTE I User csep.admin.01 logged in.  Already licensed
+  6312(  5212) 06/09/2026 16:21:19.113  RTE I User csep.admin.01 has logged in and is using a Limited license ( 13 out of unlimited )
+  6312(  5212) 06/09/2026 16:21:19.113   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312(  5212) 06/09/2026 16:21:19.128   JS I Successfully created new JS context 0x107D5E010, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312(  5212) 06/09/2026 16:21:19.128   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312(  5212) 06/09/2026 16:21:19.332   JS E Failed executing Function('dynamicFormGenerator') using context 0x107D5E010 and Object 0X10500E280 of class Function('mergeTableAccessible')
+  6312(  5212) 06/09/2026 16:21:19.332   JS E JSScript 'dynamicFormGenerator' line 1768: Error at column 9 -- TypeError: from is null
+  6312(  5212) 06/09/2026 16:21:19.332   JS E Exception Stack:
+                                              mergeTableAccessible@dynamicFormGenerator:1768:9
+  6312(  5212) 06/09/2026 16:21:19.332  RTE I Base login Response: 0.234 -- RAD: 0.001  JS: 0.155 Log:0.000 Database: 0.078(00444)  (CPU 0.202)  application:login,cleanup
+  6312(   452) 06/09/2026 16:21:24.748   JS E SCFile.setFields called with unknown field "product.category" in file "esdMSdxmsItemAssignment" - ignored, js code: getOneRecord@'ESD_Utils':450:9
+  6312( 11520) 06/09/2026 16:21:31.611  RTE E SQL Error: FATAL:  terminating connection due to idle-session timeout server closed the connection unexpectedly 	This probably means the server terminated abnormally 	before or while processing the request. 
+  6312( 11520) 06/09/2026 16:21:31.611  RTE E FATAL:  terminating connection due to idle-session timeout server closed the connection unexpectedly 	This probably means the server terminated abnormally 	before or while processing the request. 
+  6312( 11520) 06/09/2026 16:21:31.611  RTE E API=PQexecParams [in sqpgsqlSelect], Statement=SELECT "NAME","CONTACT_NAME","SYSTEMPLATE" FROM OPERATORM1 WHERE "NAME"=$1
+  6312( 11520) 06/09/2026 16:21:31.611  RTE I sqpgsqlSelect - PQexecPrepared() failed
+  6312( 11520) 06/09/2026 16:21:31.627  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312( 11520) 06/09/2026 16:21:31.643  RTE I Set session schema: public
+  6312( 11520) 06/09/2026 16:21:31.643  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312(  5212) 06/09/2026 16:21:56.732 JRTE I dao-thread exit due to timeout:csep.admin.01
+  6312(  5212) 06/09/2026 16:21:56.732 JRTE I DAOThread exits after idle for (sec): dao_sessiontimeout=15
+  6312(  5212) 06/09/2026 16:21:56.732 JRTE I Termination signal: 0
+  6312(  5212) 06/09/2026 16:21:56.732  RTE D Destroying DAOThread 0x12811DC60
+  6312(  5212) 06/09/2026 16:21:56.732  RTE I sytermClean entered for signal 0
+  6312(  5212) 06/09/2026 16:21:56.732  RTE I Thread termination in progress
+  6312(  5212) 06/09/2026 16:21:56.732  RTE I User csep.admin.01 has logged out.  Still licensed ( 2 sessions remaining )
+  6312(  5212) 06/09/2026 16:21:56.732   JS I Calling JS_DestroyContext for 0x107D5E010
+  6312(  5212) 06/09/2026 16:21:56.748  RTE I Thread termination cleanup complete.  Thread was active for 0 days,00:00:37. Threads remaining: 20 of 250
+  6312( 12556) 06/09/2026 16:22:10.670   JS E SetProperty() called on Object 0X1210B8AF0 of class SCFile('esdHDcontractHHDV') with an ID of String 'name' failed, the property value is 'Value 'Bộ hộp tiền phục vụ nghiệp vụ thẻ - GT_26_000022.1'', the JS source info: CreateTicket@'ESD_Utils':60:13
+  6312( 12556) 06/09/2026 16:22:10.686   JS E SetProperty() called on Object 0X1210B8BB0 of class SCFile('esdHDcontractHHDV') with an ID of String 'name' failed, the property value is 'Value 'Máy ATM để sảnh phục vụ nghiệp vụ thẻ - GT_26_000022.2'', the JS source info: CreateTicket@'ESD_Utils':60:13
+  6312( 12556) 06/09/2026 16:22:10.686   JS E SetProperty() called on Object 0X1210B8CA0 of class SCFile('esdHDcontractHHDV') with an ID of String 'name' failed, the property value is 'Value 'Phôi thẻ phục vụ nghiệp vụ thẻ - GT_26_000022.3'', the JS source info: CreateTicket@'ESD_Utils':60:13
+  6312( 12556) 06/09/2026 16:22:10.686   JS E SetProperty() called on Object 0X1210B8D60 of class SCFile('esdHDcontractHHDV') with an ID of String 'name' failed, the property value is 'Value 'Máy in thẻ phục vụ nghiệp vụ thẻ - GT_26_000022.4'', the JS source info: CreateTicket@'ESD_Utils':60:13
+  6312(  6920) 06/09/2026 16:22:15.023  RTE I Using "utpool" memory manager
+  6312(  6920) 06/09/2026 16:22:15.023  RTE I I18n initialized successfully for language "english"
+  6312(  6920) 06/09/2026 16:22:15.023  RTE I Process sm 9.80.1006 (P1 [4900b49]) System: 13081 (0x6FE5BB00) on PC (x64 64-bit) running Windows (6.2 Build 9200) Timezone GMT+07:00 Locale en_US from hpo-0-vdi
+  6312(  6920) 06/09/2026 16:22:15.023  RTE I Host network address: 10.0.62.10
+  6312(  6920) 06/09/2026 16:22:15.023  RTE I Thread attaching to resources with key 0x6FE5BB00
+  6312(  6920) 06/09/2026 16:22:15.055  RTE I Connection established to dbtype 'postgresql' database 'host=10.0.62.21 port=5432 dbname=postgres' user 'postgres'
+  6312(  6920) 06/09/2026 16:22:15.055  RTE I Set session schema: public
+  6312(  6920) 06/09/2026 16:22:15.055  RTE I Connected to PostgreSQL server version: 16.8 through PQLib: 160002 using database 'postgres' as user 'postgres', server encoding: UTF8, client encoding: UTF8
+  6312(  6920) 06/09/2026 16:22:15.055  RTE I Thread DAOThread - csep.admin.01 initialization done. Thread 21 of 250.
+  6312(  6920) 06/09/2026 16:22:15.055  RTE I Total sessions since process began: 983
+  6312(  6920) 06/09/2026 16:22:15.071  RTE I User csep.admin.01 logged in.  Already licensed
+  6312(  6920) 06/09/2026 16:22:15.071  RTE I User csep.admin.01 has logged in and is using a Limited license ( 13 out of unlimited )
+  6312(  6920) 06/09/2026 16:22:15.071   JS I Try creating JS Context with a JS heap size of 50331648 bytes..
+  6312(  6920) 06/09/2026 16:22:15.087   JS I Successfully created new JS context 0x107D5E010, the supported JavaScript version is "default", the JS Engine version is "JavaScript-C50.0.2"
+  6312(  6920) 06/09/2026 16:22:15.102   JS I Succeeded to initialize the SpiderMonkey extensions 'Reflect' and 'Debugger' in the Global
+  6312(  6920) 06/09/2026 16:22:15.293   JS E Failed executing Function('dynamicFormGenerator') using context 0x107D5E010 and Object 0X104F0E280 of class Function('mergeTableAccessible')
+  6312(  6920) 06/09/2026 16:22:15.293   JS E JSScript 'dynamicFormGenerator' line 1768: Error at column 9 -- TypeError: from is null
+  6312(  6920) 06/09/2026 16:22:15.293   JS E Exception Stack:
+                                              mergeTableAccessible@dynamicFormGenerator:1768:9
+  6312(  6920) 06/09/2026 16:22:15.309  RTE I Base login Response: 0.250 -- RAD: 0.047  JS: 0.156 Log:0.000 Database: 0.047(00445)  (CPU 0.249)  application:login,cleanup
