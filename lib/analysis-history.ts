@@ -6,6 +6,8 @@ export interface StoredAnalysis {
   id: string;
   name: string;
   createdAt: string;
+  bucketInterval?: "5m";
+  bucketCount?: number;
   result: unknown;
 }
 
@@ -34,12 +36,22 @@ export async function listHistory() {
 
 export async function saveHistory(name: string, result: unknown) {
   const history = await readHistory();
-  const entry = { id: randomUUID(), name, createdAt: new Date().toISOString(), result };
+  const bucketCount = Array.isArray((result as { timeBuckets?: unknown[] })?.timeBuckets)
+    ? (result as { timeBuckets: unknown[] }).timeBuckets.length
+    : 0;
+  const entry = { id: randomUUID(), name, createdAt: new Date().toISOString(), bucketInterval: "5m" as const, bucketCount, result };
   await writeHistory([entry, ...history].slice(0, MAX_HISTORY));
   return entry;
 }
 
 export async function deleteHistory(id: string) {
+  return deleteHistoryEntries([id]);
+}
+
+export async function deleteHistoryEntries(ids: string[]) {
+  const selectedIds = new Set(ids);
   const history = await readHistory();
-  await writeHistory(history.filter((entry) => entry.id !== id));
+  const remaining = history.filter((entry) => !selectedIds.has(entry.id));
+  await writeHistory(remaining);
+  return history.length - remaining.length;
 }

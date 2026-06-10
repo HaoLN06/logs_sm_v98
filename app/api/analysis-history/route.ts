@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { deleteHistory, listHistory, saveHistory } from "@/lib/analysis-history";
+import { deleteHistoryEntries, listHistory, saveHistory } from "@/lib/analysis-history";
 
 export const runtime = "nodejs";
 
@@ -17,7 +17,12 @@ export async function POST(request: NextRequest) {
 
 export async function DELETE(request: NextRequest) {
   const id = request.nextUrl.searchParams.get("id");
-  if (!id) return NextResponse.json({ error: "Thiếu ID lịch sử." }, { status: 400 });
-  await deleteHistory(id);
-  return NextResponse.json({ success: true });
+  const body = await request.json().catch(() => ({})) as { ids?: unknown };
+  const ids = [...new Set([
+    ...(id ? [id] : []),
+    ...(Array.isArray(body.ids) ? body.ids.filter((value): value is string => typeof value === "string" && value.length > 0) : []),
+  ])];
+  if (!ids.length) return NextResponse.json({ error: "Thiếu ID lịch sử." }, { status: 400 });
+  const deletedCount = await deleteHistoryEntries(ids);
+  return NextResponse.json({ success: true, deletedCount });
 }

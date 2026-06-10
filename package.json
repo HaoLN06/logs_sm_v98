@@ -10,6 +10,7 @@
     "test:parser": "tsx tests/parser-smoke.ts",
     "test:anomaly": "tsx tests/anomaly-detection.ts",
     "test:time": "tsx tests/time-filter.ts",
+    "test:buckets": "tsx tests/time-buckets.ts",
     "test:trends": "tsx tests/trend-analysis.ts"
   },
   "dependencies": {

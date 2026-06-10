@@ -12,6 +12,7 @@ import { IssueDetailDrawer } from "@/components/issue-detail-drawer";
 import { ThemeMenu } from "@/components/theme-menu";
 import { AnalysisResult, IssueGroup } from "@/lib/log-parser";
 import { filterAnalysisByPreset, filterAnalysisByRange, restoreTimeBuckets, TIME_PRESETS, TimePreset } from "@/lib/time-filter";
+import { bucketTimeline, BUCKET_INTERVALS, BucketInterval } from "@/lib/time-buckets";
 
 const demo: AnalysisResult = {
   fileName: "sm-13083.log",
@@ -54,6 +55,7 @@ const priorityRank = { Critical: 4, High: 3, Medium: 2, Low: 1 };
 export function LogDashboard() {
   const [fullResult, setFullResult] = useState<AnalysisResult>(demo);
   const [timePreset, setTimePreset] = useState<TimePreset>("all");
+  const [bucketInterval, setBucketInterval] = useState<BucketInterval>("15m");
   const [customStart, setCustomStart] = useState("");
   const [customEnd, setCustomEnd] = useState("");
   const [loading, setLoading] = useState(false);
@@ -72,8 +74,9 @@ export function LogDashboard() {
   const [pageSize, setPageSize] = useState(10);
   const [history, setHistory] = useState<HistoryEntry[]>([]);
   const [showHistory, setShowHistory] = useState(false);
-  const [deleteTarget, setDeleteTarget] = useState<HistoryEntry | null>(null);
-  const [deletingHistoryId, setDeletingHistoryId] = useState("");
+  const [selectedHistoryIds, setSelectedHistoryIds] = useState<string[]>([]);
+  const [deleteTargets, setDeleteTargets] = useState<HistoryEntry[]>([]);
+  const [deletingHistoryIds, setDeletingHistoryIds] = useState<string[]>([]);
   const [toast, setToast] = useState<ToastMessage | null>(null);
   const result = useMemo(() => {
     if (timePreset !== "all") return filterAnalysisByPreset(fullResult, timePreset);
@@ -86,8 +89,8 @@ export function LogDashboard() {
     if (!showHistory) return;
     const close = (event: KeyboardEvent) => {
       if (event.key !== "Escape") return;
-      if (deleteTarget) setDeleteTarget(null);
-      else setShowHistory(false);
+      if (deleteTargets.length) setDeleteTargets([]);
+      else closeHistory();
     };
     document.body.style.overflow = "hidden";
     window.addEventListener("keydown", close);
@@ -95,7 +98,7 @@ export function LogDashboard() {
       document.body.style.overflow = "";
       window.removeEventListener("keydown", close);
     };
-  }, [showHistory, deleteTarget]);
+  }, [showHistory, deleteTargets]);
   useEffect(() => {
     if (!toast) return;
     const timer = window.setTimeout(() => setToast(null), 4200);
@@ -137,6 +140,7 @@ export function LogDashboard() {
       const response = await fetch("/api/analysis-history");
       const data = await response.json() as { history: HistoryEntry[] };
       setHistory(data.history);
+      setSelectedHistoryIds((selected) => selected.filter((id) => data.history.some((entry) => entry.id === id)));
     } catch {
       setSourceError("Không thể tải lịch sử phân tích.");
     }
@@ -172,19 +176,41 @@ export function LogDashboard() {
   }
 
   async function removeHistory() {
-    if (!deleteTarget || deletingHistoryId) return;
-    setDeletingHistoryId(deleteTarget.id);
+    if (!deleteTargets.length || deletingHistoryIds.length) return;
+    const ids = deleteTargets.map((entry) => entry.id);
+    setDeletingHistoryIds(ids);
     try {
-      const response = await fetch(`/api/analysis-history?id=${encodeURIComponent(deleteTarget.id)}`, { method: "DELETE" });
+      const response = await fetch("/api/analysis-history", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ids }),
+      });
       if (!response.ok) throw new Error("Delete failed");
       await refreshHistory();
-      showToast("success", "Đã xóa lịch sử", `Phiên “${deleteTarget.name}” đã được xóa thành công.`);
-      setDeleteTarget(null);
+      showToast(
+        "success",
+        deleteTargets.length > 1 ? `Đã xóa ${deleteTargets.length} phiên` : "Đã xóa lịch sử",
+        deleteTargets.length > 1 ? "Các phiên phân tích đã chọn đã được xóa thành công." : `Phiên “${deleteTargets[0].name}” đã được xóa thành công.`,
+      );
+      setDeleteTargets([]);
     } catch {
       showToast("error", "Không thể xóa lịch sử", "Có lỗi xảy ra khi xóa phiên phân tích. Vui lòng thử lại.");
     } finally {
-      setDeletingHistoryId("");
+      setDeletingHistoryIds([]);
     }
+  }
+
+  function closeHistory() {
+    setShowHistory(false);
+    setSelectedHistoryIds([]);
+  }
+
+  function toggleHistorySelection(id: string) {
+    setSelectedHistoryIds((selected) => selected.includes(id) ? selected.filter((item) => item !== id) : [...selected, id]);
+  }
+
+  function toggleAllHistory() {
+    setSelectedHistoryIds((selected) => selected.length === history.length ? [] : history.map((entry) => entry.id));
   }
 
   function showToast(tone: ToastMessage["tone"], title: string, message: string) {
@@ -198,7 +224,7 @@ export function LogDashboard() {
     setCustomEnd("");
     setSelectedIssue(null);
     setSignalDrilldown(null);
-    setShowHistory(false);
+    closeHistory();
   }
 
   async function upload(event: ChangeEvent<HTMLInputElement>) {
@@ -328,7 +354,7 @@ export function LogDashboard() {
           </section>
 
           <section className="grid-main">
-            <Timeline result={result} />
+            <Timeline result={result} interval={bucketInterval} onInterval={setBucketInterval} />
             <div className="panel"><div className="panel-head"><div><h2 className="panel-title">Lỗi theo component</h2><div className="panel-subtitle">Khu vực cần ưu tiên điều tra</div></div><Gauge size={16} color="#7d8984" /></div>
               <div className="component-list">{result.componentErrors.slice(0, 6).map((item, index) => <ComponentBar key={item.name} {...item} max={result.componentErrors[0]?.count || 1} index={index} />)}</div>
             </div>
@@ -343,8 +369,8 @@ export function LogDashboard() {
         </div>
       </main>
       {loading && <div className="loading"><div><div className="spinner" /><b>Đang phân tích nhiều file log</b><p>Parser đang chuẩn hóa và nhóm các sự cố...</p></div></div>}
-      {showHistory && <HistoryModal history={history} deletingId={deletingHistoryId} onOpen={openHistory} onDelete={setDeleteTarget} onClose={() => setShowHistory(false)} />}
-      {deleteTarget && <DeleteHistoryDialog entry={deleteTarget} deleting={deletingHistoryId === deleteTarget.id} onConfirm={removeHistory} onClose={() => setDeleteTarget(null)} />}
+      {showHistory && <HistoryModal history={history} selectedIds={selectedHistoryIds} deletingIds={deletingHistoryIds} onOpen={openHistory} onToggle={toggleHistorySelection} onToggleAll={toggleAllHistory} onDelete={(entry) => setDeleteTargets([entry])} onDeleteSelected={() => setDeleteTargets(history.filter((entry) => selectedHistoryIds.includes(entry.id)))} onClose={closeHistory} />}
+      {!!deleteTargets.length && <DeleteHistoryDialog entries={deleteTargets} deleting={deletingHistoryIds.length > 0} onConfirm={removeHistory} onClose={() => setDeleteTargets([])} />}
       {toast && <Toast key={toast.id} toast={toast} onClose={() => setToast(null)} />}
       {signalDrilldown && <SignalDrilldownDrawer type={signalDrilldown} result={result} onSelect={setSelectedIssue} onClose={() => setSignalDrilldown(null)} />}
       {selectedIssue && <IssueDetailDrawer issue={selectedIssue} sourceFiles={result.sourceFiles.map((file) => file.name)} onClose={() => setSelectedIssue(null)} />}
@@ -352,22 +378,24 @@ export function LogDashboard() {
   );
 }
 
-function HistoryModal({ history, deletingId, onOpen, onDelete, onClose }: { history: HistoryEntry[]; deletingId: string; onOpen: (entry: HistoryEntry) => void; onDelete: (entry: HistoryEntry) => void; onClose: () => void }) {
-  return <div className="history-backdrop" onMouseDown={onClose}><section className="history-modal" role="dialog" aria-modal="true" aria-labelledby="history-title" onMouseDown={(event) => event.stopPropagation()}><div className="history-modal-head"><div><span className="history-kicker">Analysis sessions</span><h2 id="history-title">Lịch sử phân tích</h2><p>Mở lại kết quả tổng hợp từ các phiên phân tích trước.</p></div><button className="history-close" onClick={onClose} aria-label="Đóng lịch sử"><X size={18} /></button></div><div className="history-modal-meta"><span><History size={14} />{history.length} phiên đã lưu</span><small>Lưu tối đa 30 phiên gần nhất</small></div><div className="history-list">{history.length ? history.map((entry) => {
+function HistoryModal({ history, selectedIds, deletingIds, onOpen, onToggle, onToggleAll, onDelete, onDeleteSelected, onClose }: { history: HistoryEntry[]; selectedIds: string[]; deletingIds: string[]; onOpen: (entry: HistoryEntry) => void; onToggle: (id: string) => void; onToggleAll: () => void; onDelete: (entry: HistoryEntry) => void; onDeleteSelected: () => void; onClose: () => void }) {
+  const allSelected = history.length > 0 && selectedIds.length === history.length;
+  return <div className="history-backdrop" onMouseDown={onClose}><section className="history-modal" role="dialog" aria-modal="true" aria-labelledby="history-title" onMouseDown={(event) => event.stopPropagation()}><div className="history-modal-head"><div><span className="history-kicker">Analysis sessions</span><h2 id="history-title">Lịch sử phân tích</h2><p>Mở lại kết quả tổng hợp từ các phiên phân tích trước.</p></div><button className="history-close" onClick={onClose} aria-label="Đóng lịch sử"><X size={18} /></button></div><div className="history-modal-meta"><span><History size={14} />{history.length} phiên đã lưu</span><div className="history-selection-actions"><button className={`history-select-all ${allSelected ? "active" : ""}`} disabled={!history.length || deletingIds.length > 0} onClick={onToggleAll}><i>{allSelected && <Check size={12} strokeWidth={3} />}</i>{allSelected ? "Bỏ chọn tất cả" : "Chọn tất cả"}</button><button className="history-bulk-delete" disabled={!selectedIds.length || deletingIds.length > 0} onClick={onDeleteSelected}><Trash2 size={14} />Xóa đã chọn {selectedIds.length > 0 && `(${selectedIds.length})`}</button></div></div><div className="history-list">{history.length ? history.map((entry) => {
     const summary = entry.result as Partial<AnalysisResult>;
     const errorCount = summary.levelCounts?.E || 0;
-    const deleting = deletingId === entry.id;
-    return <article className={`history-item ${deleting ? "deleting" : ""}`} key={entry.id}><button className="history-open" disabled={deleting} onClick={() => onOpen(entry)}><span className="history-icon"><FileText size={17} /></span><span className="history-content"><span className="history-title-row"><b>{entry.name}</b><time>{formatFullDate(new Date(entry.createdAt))}</time></span><span className="history-stats"><i>{numberFormat.format(summary.sourceFiles?.length || 0)} file</i><i>{numberFormat.format(summary.parsedLines || 0)} events</i><i className="error">{numberFormat.format(errorCount)} lỗi</i><i>{numberFormat.format(summary.issues?.length || 0)} nhóm</i></span></span><ChevronRight size={17} className="history-chevron" /></button><button className="history-delete" disabled={deleting} onClick={() => onDelete(entry)} aria-label={`Xóa ${entry.name}`} title="Xóa phiên">{deleting ? <LoaderCircle size={15} className="button-spin" /> : <Trash2 size={15} />}</button></article>;
+    const deleting = deletingIds.includes(entry.id);
+    const selected = selectedIds.includes(entry.id);
+    return <article className={`history-item ${selected ? "selected" : ""} ${deleting ? "deleting" : ""}`} key={entry.id}><button className={`history-select ${selected ? "active" : ""}`} disabled={deleting} onClick={() => onToggle(entry.id)} aria-label={`${selected ? "Bỏ chọn" : "Chọn"} ${entry.name}`} aria-pressed={selected}>{selected && <Check size={13} strokeWidth={3} />}</button><button className="history-open" disabled={deleting} onClick={() => onOpen(entry)}><span className="history-icon"><FileText size={17} /></span><span className="history-content"><span className="history-title-row"><b>{entry.name}</b><time>{formatFullDate(new Date(entry.createdAt))}</time></span><span className="history-stats"><i>{numberFormat.format(summary.sourceFiles?.length || 0)} file</i><i>{numberFormat.format(summary.parsedLines || 0)} events</i><i className="error">{numberFormat.format(errorCount)} lỗi</i><i>{numberFormat.format(summary.issues?.length || 0)} nhóm</i></span></span><ChevronRight size={17} className="history-chevron" /></button><button className="history-delete" disabled={deleting} onClick={() => onDelete(entry)} aria-label={`Xóa ${entry.name}`} title="Xóa phiên">{deleting ? <LoaderCircle size={15} className="button-spin" /> : <Trash2 size={15} />}</button></article>;
   }) : <div className="history-empty"><span className="history-empty-icon"><History size={24} /></span><b>Chưa có lịch sử phân tích</b><p>Sau khi phân tích file log, kết quả tổng hợp sẽ tự động xuất hiện tại đây.</p></div>}</div></section></div>;
 }
 
-function DeleteHistoryDialog({ entry, deleting, onConfirm, onClose }: { entry: HistoryEntry; deleting: boolean; onConfirm: () => void; onClose: () => void }) {
-  const summary = entry.result as Partial<AnalysisResult>;
+function DeleteHistoryDialog({ entries, deleting, onConfirm, onClose }: { entries: HistoryEntry[]; deleting: boolean; onConfirm: () => void; onClose: () => void }) {
+  const multiple = entries.length > 1;
   return <div className="confirm-backdrop" onMouseDown={() => { if (!deleting) onClose(); }}><section className="confirm-dialog" role="alertdialog" aria-modal="true" aria-labelledby="delete-history-title" onMouseDown={(event) => event.stopPropagation()}>
     <div className="confirm-icon"><Trash2 size={21} /></div>
-    <div className="confirm-copy"><span>Xóa lịch sử phân tích</span><h2 id="delete-history-title">Bạn chắc chắn muốn xóa phiên này?</h2><p>Thao tác này sẽ xóa dữ liệu tổng hợp của phiên khỏi lịch sử và không thể hoàn tác.</p></div>
-    <div className="confirm-target"><FileText size={16} /><div><b>{entry.name}</b><span>{formatFullDate(new Date(entry.createdAt))} · {numberFormat.format(summary.issues?.length || 0)} nhóm sự cố</span></div></div>
-    <div className="confirm-actions"><button className="confirm-cancel" disabled={deleting} onClick={onClose}>Giữ lại</button><button className="confirm-delete" disabled={deleting} onClick={onConfirm}>{deleting ? <><LoaderCircle size={15} className="button-spin" />Đang xóa...</> : <><Trash2 size={15} />Xóa lịch sử</>}</button></div>
+    <div className="confirm-copy"><span>Xóa lịch sử phân tích</span><h2 id="delete-history-title">{multiple ? `Xóa ${entries.length} phiên đã chọn?` : "Bạn chắc chắn muốn xóa phiên này?"}</h2><p>Thao tác này sẽ xóa dữ liệu tổng hợp khỏi lịch sử và không thể hoàn tác.</p></div>
+    <div className="confirm-targets">{entries.slice(0, 3).map((entry) => { const summary = entry.result as Partial<AnalysisResult>; return <div className="confirm-target" key={entry.id}><FileText size={16} /><div><b>{entry.name}</b><span>{formatFullDate(new Date(entry.createdAt))} · {numberFormat.format(summary.issues?.length || 0)} nhóm sự cố</span></div></div>; })}{entries.length > 3 && <span className="confirm-more">và {entries.length - 3} phiên khác</span>}</div>
+    <div className="confirm-actions"><button className="confirm-cancel" disabled={deleting} onClick={onClose}>Giữ lại</button><button className="confirm-delete" disabled={deleting} onClick={onConfirm}>{deleting ? <><LoaderCircle size={15} className="button-spin" />Đang xóa...</> : <><Trash2 size={15} />{multiple ? `Xóa ${entries.length} phiên` : "Xóa lịch sử"}</>}</button></div>
   </section></div>;
 }
 
@@ -375,8 +403,10 @@ function Toast({ toast, onClose }: { toast: ToastMessage; onClose: () => void })
   return <aside className={`toast toast-${toast.tone}`} role="status"><span className="toast-icon">{toast.tone === "success" ? <CheckCircle2 size={19} /> : <AlertTriangle size={19} />}</span><div><b>{toast.title}</b><p>{toast.message}</p></div><button onClick={onClose} aria-label="Đóng thông báo"><X size={15} /></button><i /></aside>;
 }
 
-function Timeline({ result }: { result: AnalysisResult }) {
-  return <div className="panel"><div className="panel-head"><div><h2 className="panel-title">Tín hiệu theo thời gian</h2><div className="panel-subtitle">Phân bố error, warning và performance alert</div></div><div className="legend"><span style={{ "--dot": "#d24c3f" } as React.CSSProperties}>Error</span><span style={{ "--dot": "#e68b2c" } as React.CSSProperties}>Warning</span></div></div><div className="chart"><ResponsiveContainer minWidth={0} minHeight={240} initialDimension={{ width: 800, height: 240 }}><AreaChart data={result.timeline}><defs><linearGradient id="errorFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="#d24c3f" stopOpacity=".2" /><stop offset="100%" stopColor="#d24c3f" stopOpacity="0" /></linearGradient></defs><CartesianGrid stroke="#edf0ee" vertical={false} /><XAxis dataKey="time" axisLine={false} tickLine={false} tick={{ fontSize: 10, fill: "#89918e" }} /><YAxis axisLine={false} tickLine={false} tick={{ fontSize: 10, fill: "#89918e" }} width={35} /><Tooltip contentStyle={{ border: "1px solid #e3e8e5", borderRadius: 9, fontSize: 11 }} /><Area type="monotone" dataKey="errors" stroke="#d24c3f" strokeWidth={2} fill="url(#errorFill)" /><Area type="monotone" dataKey="warnings" stroke="#e68b2c" strokeWidth={1.5} fill="transparent" /></AreaChart></ResponsiveContainer></div></div>;
+function Timeline({ result, interval, onInterval }: { result: AnalysisResult; interval: BucketInterval; onInterval: (interval: BucketInterval) => void }) {
+  const bucketData = useMemo(() => bucketTimeline(result.timeBuckets, interval), [result.timeBuckets, interval]);
+  const timeline = bucketData.length ? bucketData : result.timeline;
+  return <div className="panel"><div className="panel-head timeline-head"><div><h2 className="panel-title">Tín hiệu theo thời gian</h2><div className="panel-subtitle">{bucketData.length ? `${bucketData.length} khung dữ liệu · tổng hợp theo ${BUCKET_INTERVALS.find((item) => item.value === interval)?.label}` : "Phân bố error, warning và performance alert"}</div></div><div className="timeline-actions"><div className="legend"><span style={{ "--dot": "#d24c3f" } as React.CSSProperties}>Error</span><span style={{ "--dot": "#e68b2c" } as React.CSSProperties}>Warning</span></div><label className="bucket-resolution"><span>Độ phân giải</span><select value={interval} disabled={!result.timeBuckets.length} onChange={(event) => onInterval(event.target.value as BucketInterval)}>{BUCKET_INTERVALS.map((item) => <option key={item.value} value={item.value}>{item.label}</option>)}</select></label></div></div><div className="chart"><ResponsiveContainer minWidth={0} minHeight={240} initialDimension={{ width: 800, height: 240 }}><AreaChart data={timeline}><defs><linearGradient id="errorFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="#d24c3f" stopOpacity=".2" /><stop offset="100%" stopColor="#d24c3f" stopOpacity="0" /></linearGradient></defs><CartesianGrid stroke="#edf0ee" vertical={false} /><XAxis dataKey="time" axisLine={false} tickLine={false} tick={{ fontSize: 10, fill: "#89918e" }} /><YAxis axisLine={false} tickLine={false} tick={{ fontSize: 10, fill: "#89918e" }} width={35} /><Tooltip contentStyle={{ border: "1px solid #e3e8e5", borderRadius: 9, fontSize: 11 }} /><Area type="monotone" dataKey="errors" name="Lỗi" stroke="#d24c3f" strokeWidth={2} fill="url(#errorFill)" /><Area type="monotone" dataKey="warnings" name="Cảnh báo" stroke="#e68b2c" strokeWidth={1.5} fill="transparent" /></AreaChart></ResponsiveContainer></div></div>;
 }
 
 function TimeRangeToolbar({ preset, start, end, min, max, disabled, onPreset, onCustom }: {
