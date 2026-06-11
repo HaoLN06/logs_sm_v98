@@ -11,6 +11,7 @@
     "test:anomaly": "tsx tests/anomaly-detection.ts",
     "test:time": "tsx tests/time-filter.ts",
     "test:buckets": "tsx tests/time-buckets.ts",
+    "test:assistant": "tsx tests/log-assistant.ts",
     "test:trends": "tsx tests/trend-analysis.ts"
   },
   "dependencies": {

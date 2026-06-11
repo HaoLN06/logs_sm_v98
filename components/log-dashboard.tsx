@@ -9,6 +9,7 @@ import {
 import { Area, AreaChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import { AppSidebar } from "@/components/app-sidebar";
 import { IssueDetailDrawer } from "@/components/issue-detail-drawer";
+import { LogAssistant } from "@/components/log-assistant";
 import { ThemeMenu } from "@/components/theme-menu";
 import { AnalysisResult, IssueGroup } from "@/lib/log-parser";
 import { filterAnalysisByPreset, filterAnalysisByRange, restoreTimeBuckets, TIME_PRESETS, TimePreset } from "@/lib/time-filter";
@@ -374,6 +375,7 @@ export function LogDashboard() {
       {toast && <Toast key={toast.id} toast={toast} onClose={() => setToast(null)} />}
       {signalDrilldown && <SignalDrilldownDrawer type={signalDrilldown} result={result} onSelect={setSelectedIssue} onClose={() => setSignalDrilldown(null)} />}
       {selectedIssue && <IssueDetailDrawer issue={selectedIssue} sourceFiles={result.sourceFiles.map((file) => file.name)} onClose={() => setSelectedIssue(null)} />}
+      <LogAssistant result={result} onSelectIssue={setSelectedIssue} />
     </div>
   );
 }
